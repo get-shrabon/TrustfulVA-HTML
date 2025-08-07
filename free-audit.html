@@ -1,0 +1,1010 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- SEO Meta Tags -->
+        <title>Free Business Audit | Virtual Assistant Consultation - TrustfulVA</title>
+        <meta name="description"
+            content="Get a free business audit and virtual assistant consultation from TrustfulVA. Discover how our professional VA services can streamline your operations and boost productivity. No commitment required!">
+        <meta name="keywords"
+            content="free business audit, virtual assistant consultation, free VA assessment, business efficiency audit, productivity analysis, workflow optimization, virtual assistant evaluation">
+        <meta name="author" content="TrustfulVA">
+        <meta name="robots" content="index, follow">
+
+        <!-- Open Graph / Social Media Meta Tags -->
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Free Business Audit | Virtual Assistant Consultation - TrustfulVA">
+        <meta property="og:description"
+            content="Get a free business audit and virtual assistant consultation from TrustfulVA. Discover how our professional VA services can help your business.">
+        <meta property="og:image" content="/assets/images/trustful-fav.png">
+        <meta property="og:url" content="https://trustfulva.com/free-audit">
+        <meta property="og:site_name" content="TrustfulVA">
+
+        <!-- Twitter Meta Tags -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Free Business Audit | Virtual Assistant Consultation - TrustfulVA">
+        <meta name="twitter:description"
+            content="Get a free business audit and virtual assistant consultation from TrustfulVA. Discover how our professional VA services can help your business.">
+        <meta name="twitter:image" content="/assets/images/trustful-fav.png">
+
+        <!-- Additional SEO Meta Tags -->
+        <meta name="theme-color" content="#2f80ed">
+        <meta name="msapplication-TileColor" content="#2f80ed">
+        <link rel="canonical" href="https://trustfulva.com/free-audit">
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="/assets/images/trustful-fav.png">
+        <link rel="apple-touch-icon" href="/assets/images/trustful-fav.png">
+
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="/assets/css/style.css">
+        <link rel="stylesheet" href="/assets/css/free-audit.css">
+        <!-- Tailwind CSS CDN -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <!-- DaisyUI CDN -->
+        <script src="https://cdn.jsdelivr.net/npm/daisyui@latest"></script>
+
+        <!-- Swiper CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <!-- Google Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet">
+        <!-- FontAwesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+
+<body class="font-body text-body bg-white">
+
+    <header>
+        <!-- Navigation Bar -->
+        <nav id="navbar" ref="navbar"
+            class="navbar fixed top-0 left-0 right-0 z-50 py-4 transition-all duration-300 w-full">
+            <div class="w-full max-w-full mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
+                <div class="flex justify-between items-center w-full">
+
+                    <!-- Logo -->
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
+                            <span class="text-white font-heading font-bold text-lg">T</span>
+                        </div>
+                        <span class="font-heading font-bold text-xl text-dark">TrustfulVA</span>
+                    </div>
+
+                    <!-- Desktop Menu -->
+                    <div class="hidden lg:flex items-center space-x-6 xl:space-x-8">
+                        <a href="index.html" class="menu-item font-body font-medium text-dark text-sm"
+                            active-class="menu-item-active" exact>Home</a>
+                        <a href="about.html" class="menu-item font-body font-medium text-dark text-sm"
+                            active-class="menu-item-active">About Us</a>
+                        <a href="services.html" class="menu-item font-body font-medium text-dark text-sm"
+                            active-class="menu-item-active">Services</a>
+                        <a href="portfolio.html" class="menu-item font-body font-medium text-dark text-sm"
+                            active-class="menu-item-active">Portfolio</a>
+                        <a href="pricing.html" class="menu-item font-body font-medium text-dark text-sm"
+                            active-class="menu-item-active">Pricing</a>
+                        <a href="contact-us.html" class="menu-item font-body font-medium text-dark text-sm"
+                            active-class="menu-item-active">Contact Us</a>
+                        <a href="services/blog.html" class="menu-item font-body font-medium text-dark text-sm"
+                            active-class="menu-item-active">Blog</a>
+                    </div>
+
+                    <!-- CTA Buttons -->
+                    <div class="hidden md:flex items-center space-x-3">
+                        <a href="contact-us.html"
+                            class="bg-primary hover-primary text-white font-body font-semibold px-4 py-2 rounded-lg text-sm transition-all duration-300 hover:scale-105">
+                            Get Quote
+                        </a>
+                        <a href="free-audit.html"
+                            class="border-2 border-primary text-primary hover:bg-primary hover:text-white font-body font-semibold px-4 py-2 rounded-lg text-sm transition-all duration-300 hover-white header_audit_btn">
+                            Free Audit
+                        </a>
+                    </div>
+
+                    <!-- Mobile Menu Button -->
+                    <button id="mobile-menu-btn" ref="mobileMenuBtn" @click="toggleMobileMenu"
+                        class="lg:hidden hamburger flex flex-col justify-center items-center w-8 h-8">
+                        <div class="hamburger-line line1 w-6 h-0.5 bg-dark mb-1"></div>
+                        <div class="hamburger-line line2 w-6 h-0.5 bg-dark mb-1"></div>
+                        <div class="hamburger-line line3 w-6 h-0.5 bg-dark"></div>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu Overlay -->
+            <div id="mobile-menu" ref="mobileMenu"
+                class="mobile-menu fixed top-0 left-0 w-full h-screen bg-white z-40 lg:hidden">
+                <!-- Close Button -->
+                <div class="absolute top-6 right-6">
+                    <button id="close-menu-btn" @click="closeMobileMenu"
+                        class="close-btn w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 hover:bg-gray-200 text-gray-600">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Menu Content -->
+                <div class="flex flex-col justify-center items-center h-full space-y-8 px-8">
+                    <a href="index.html" class="menu-item font-body font-semibold text-dark text-xl mobile-menu-link"
+                        active-class="menu-item-active" exact>Home</a>
+                    <a href="about.html" class="menu-item font-body font-semibold text-dark text-xl mobile-menu-link"
+                        active-class="menu-item-active">About Us</a>
+                    <a href="services.html" class="menu-item font-body font-semibold text-dark text-xl mobile-menu-link"
+                        active-class="menu-item-active">Services</a>
+                    <a href="pricing.html" class="menu-item font-body font-semibold text-dark text-xl mobile-menu-link"
+                        active-class="menu-item-active">Pricing</a>
+                    <a href="portfolio.html"
+                        class="menu-item font-body font-semibold text-dark text-xl mobile-menu-link"
+                        active-class="menu-item-active">Portfolio</a>
+                    <a href="contact-us.html"
+                        class="menu-item font-body font-semibold text-dark text-xl mobile-menu-link"
+                        active-class="menu-item-active">Contact Us</a>
+                    <a href="services/blog.html"
+                        class="menu-item font-body font-semibold text-dark text-xl mobile-menu-link"
+                        active-class="menu-item-active">Blog</a>
+
+                    <!-- Mobile CTA Buttons -->
+                    <div class="flex flex-col space-y-4 mt-8 w-full max-w-xs">
+                        <a href="contact-us.html"
+                            class="bg-primary hover-primary text-white font-body font-semibold px-6 py-3 rounded-lg transition-all duration-300 w-full">
+                            Get Quote
+                        </a>
+                        <a href="free-audit.html"
+                            class="border-2 border-primary text-primary hover:bg-primary hover:text-white font-body font-semibold px-6 py-3 rounded-lg transition-all duration-300 w-full">
+                            Free Audit
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- =========================== Banner Section Here =========================== -->
+        <section class="relative min-h-screen bg-white overflow-hidden">
+            <!-- Background Pattern -->
+            <div class="absolute inset-0 opacity-5">
+                <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                            <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#2f80ed" stroke-width="1" />
+                        </pattern>
+                    </defs>
+                    <rect width="100%" height="100%" fill="url(#grid)" />
+                </svg>
+            </div>
+
+            <!-- Floating Elements -->
+            <div class="absolute top-20 left-10 w-16 h-16 bg-primary rounded-full opacity-10 float-animation"></div>
+            <div class="absolute top-40 right-20 w-8 h-8 bg-accent rounded-full opacity-20 float-animation"
+                style="animation-delay: 1s;"></div>
+            <div class="absolute bottom-40 left-20 w-12 h-12 bg-primary rounded-full opacity-15 float-animation"
+                style="animation-delay: 2s;"></div>
+
+            <div class="container mx-auto px-6 md:px-8 py-16 md:pb-24 md:pt-40">
+                <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+
+                    <!-- Left Content -->
+                    <div class="space-y-8 z-10 relative">
+                        <!-- Badge -->
+                        <div
+                            class="inline-flex items-center space-x-2 bg-light px-4 py-2 rounded-full border border-light">
+                            <div class="w-2 h-2 bg-accent rounded-full pulse-glow"></div>
+                            <span class="text-sm font-body text-body font-medium">Free Website Analysis</span>
+                        </div>
+
+                        <!-- Main Headline -->
+                        <div class="space-y-4">
+                            <h1 class="font-heading text-4xl lg:text-6xl font-bold text-dark leading-tight">
+                                Get Your <span class="gradient-text">FREE</span><br>
+                                Website & Online<br>
+                                <span class="text-primary">Presence Audit</span>
+                            </h1>
+
+                            <p class="text-lg lg:text-xl text-body font-body leading-relaxed max-w-lg">
+                                Find out what's slowing down your growth. We'll review your site, branding, and strategy
+                                —
+                                no strings attached.
+                            </p>
+                        </div>
+
+                        <!-- Feature Points -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-5 h-5 bg-accent rounded-full flex items-center justify-center">
+                                    <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </div>
+                                <span class="text-body font-body font-medium">Site Performance</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="w-5 h-5 bg-accent rounded-full flex items-center justify-center">
+                                    <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </div>
+                                <span class="text-body font-body font-medium">SEO Analysis</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="w-5 h-5 bg-accent rounded-full flex items-center justify-center">
+                                    <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </div>
+                                <span class="text-body font-body font-medium">UX Review</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="w-5 h-5 bg-accent rounded-full flex items-center justify-center">
+                                    <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </div>
+                                <span class="text-body font-body font-medium">Brand Assessment</span>
+                            </div>
+                        </div>
+
+                        <!-- CTA Button -->
+                        <div class="pt-4">
+                            <a href="#audit-form"
+                                class="btn-gradient text-white font-heading font-semibold px-8 py-4 rounded-xl shadow-lg hover-white inline-flex items-center space-x-3 text-lg">
+
+                                <span>Request Your Free Audit</span>
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                                </svg>
+                            </a>
+
+                            <p class="text-sm text-body mt-3 font-body">
+                                <span class="text-accent">✓</span> No commitment required • <span
+                                    class="text-accent">✓</span>
+                                Delivered in 24-48 hours
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Right Visual -->
+                    <div class="relative lg:ml-8">
+                        <!-- Main Dashboard Mockup -->
+                        <div class="relative">
+                            <!-- Browser Window -->
+                            <div class="bg-white rounded-2xl shadow-2xl border border-light overflow-hidden">
+                                <!-- Browser Header -->
+                                <div class="bg-light px-4 py-3 border-b border-light flex items-center space-x-2">
+                                    <div class="flex space-x-2">
+                                        <div class="w-3 h-3 bg-red-400 rounded-full"></div>
+                                        <div class="w-3 h-3 bg-yellow-400 rounded-full"></div>
+                                        <div class="w-3 h-3 bg-accent rounded-full"></div>
+                                    </div>
+                                    <div class="flex-1 bg-white rounded-md px-3 py-1 ml-4">
+                                        <span class="text-xs text-body">🔒 audit-dashboard.com</span>
+                                    </div>
+                                </div>
+
+                                <!-- Dashboard Content -->
+                                <div class="p-6 bg-gradient-to-br from-white to-gray-50">
+                                    <!-- Header -->
+                                    <div class="flex items-center justify-between mb-6">
+                                        <h3 class="font-heading font-bold text-xl text-dark">Website Audit Report</h3>
+                                        <div class="audit-icon">
+                                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor"
+                                                viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                    </div>
+
+                                    <!-- Metrics Grid -->
+                                    <div class="grid grid-cols-2 gap-4 mb-6">
+                                        <div class="feature-card rounded-xl p-4">
+                                            <div class="text-2xl font-bold text-primary mb-1">87</div>
+                                            <div class="text-sm text-body">Performance Score</div>
+                                            <div class="w-full bg-gray-200 rounded-full h-2 mt-2">
+                                                <div class="bg-primary h-2 rounded-full" style="width: 87%"></div>
+                                            </div>
+                                        </div>
+                                        <div class="feature-card rounded-xl p-4">
+                                            <div class="text-2xl font-bold text-accent mb-1">92</div>
+                                            <div class="text-sm text-body">SEO Score</div>
+                                            <div class="w-full bg-gray-200 rounded-full h-2 mt-2">
+                                                <div class="bg-accent h-2 rounded-full" style="width: 92%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Issues Found -->
+                                    <div class="space-y-3">
+                                        <h4 class="font-heading font-semibold text-dark">Key Issues Found</h4>
+                                        <div class="space-y-2">
+                                            <div
+                                                class="flex items-center space-x-3 p-3 bg-red-50 rounded-lg border-l-4 border-red-400">
+                                                <div class="w-2 h-2 bg-red-400 rounded-full"></div>
+                                                <span class="text-sm text-body">Slow loading images</span>
+                                            </div>
+                                            <div
+                                                class="flex items-center space-x-3 p-3 bg-yellow-50 rounded-lg border-l-4 border-yellow-400">
+                                                <div class="w-2 h-2 bg-yellow-400 rounded-full"></div>
+                                                <span class="text-sm text-body">Missing meta descriptions</span>
+                                            </div>
+                                            <div
+                                                class="flex items-center space-x-3 p-3 bg-blue-50 rounded-lg border-l-4 border-primary">
+                                                <div class="w-2 h-2 bg-primary rounded-full"></div>
+                                                <span class="text-sm text-body">Mobile optimization needed</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Floating Stats Cards -->
+                            <div class="absolute -top-6 -right-6 feature-card rounded-xl p-4 shadow-lg float-animation">
+                                <div class="text-center">
+                                    <div class="text-lg font-bold gradient-text">24-48h</div>
+                                    <div class="text-xs text-body">Delivery Time</div>
+                                </div>
+                            </div>
+
+                            <div class="absolute -bottom-6 -left-6 feature-card rounded-xl p-4 shadow-lg float-animation"
+                                style="animation-delay: 1.5s;">
+                                <div class="text-center">
+                                    <div class="text-lg font-bold text-accent">100%</div>
+                                    <div class="text-xs text-body">Free Audit</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Wave -->
+            <div class="absolute bottom-0 w-full">
+                <svg viewBox="0 0 1200 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M0 120L50 105C100 90 200 60 300 45C400 30 500 30 600 37.5C700 45 800 60 900 67.5C1000 75 1100 75 1150 75L1200 75V120H1150C1100 120 1000 120 900 120C800 120 700 120 600 120C500 120 400 120 300 120C200 120 100 120 50 120H0Z"
+                        fill="#f8f9fb" fill-opacity="0.5" />
+                </svg>
+            </div>
+        </section>
+        <!-- =========================== Banner Section Here =========================== -->
+
+
+        <!-- =========================== What You Get Section Here =========================== -->
+        <section class="py-16 lg:py-24 bg-light relative overflow-hidden">
+            <!-- Background Pattern -->
+            <div class="absolute inset-0 opacity-3">
+                <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+                            <circle cx="12" cy="12" r="1" fill="#2f80ed" />
+                        </pattern>
+                    </defs>
+                    <rect width="100%" height="100%" fill="url(#dots)" />
+                </svg>
+            </div>
+
+            <!-- Floating Elements -->
+            <div class="absolute top-16 left-10 w-12 h-12 bg-primary opacity-10 rounded-full float-animation"></div>
+            <div class="absolute top-32 right-16 w-8 h-8 bg-accent opacity-15 rounded-full float-animation"
+                style="animation-delay: 1s;"></div>
+            <div class="absolute bottom-20 left-1/4 w-6 h-6 bg-primary opacity-12 rounded-full float-animation"
+                style="animation-delay: 2s;"></div>
+
+            <div class="container mx-auto px-6 lg:px-8">
+                <div class="max-w-6xl mx-auto">
+                    <!-- Section Header -->
+                    <div class="text-center mb-16">
+                        <div
+                            class="inline-flex items-center space-x-2 bg-white px-6 py-3 rounded-full border border-light shadow-sm mb-8">
+                            <div class="w-2 h-2 bg-accent rounded-full pulse-glow"></div>
+                            <span class="text-sm font-body text-body font-medium">Complete Audit Package</span>
+                        </div>
+
+                        <h2 class="font-heading text-4xl lg:text-6xl font-bold text-dark mb-6">
+                            What <span class="gradient-text">You'll Get</span>
+                        </h2>
+
+                        <p class="text-xl text-body font-body leading-relaxed max-w-3xl mx-auto">
+                            Our comprehensive audit covers every aspect of your online presence to identify growth
+                            opportunities and boost your performance.
+                        </p>
+                    </div>
+
+                    <!-- 3-Point Checklist -->
+                    <div class="grid lg:grid-cols-3 gap-8 mb-16">
+                        <!-- Performance & Speed Review -->
+                        <div class="group">
+                            <div class="feature-card rounded-3xl p-8 h-full relative overflow-hidden">
+                                <!-- Top accent line -->
+                                <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-blue-500">
+                                </div>
+
+                                <!-- Checkmark with animation -->
+                                <div class="flex items-center mb-6">
+
+                                    <h3 class="font-heading text-2xl font-bold text-dark">Performance & Speed Review
+                                    </h3>
+                                </div>
+
+                                <!-- Icon -->
+                                <div
+                                    class="w-20 h-20 bg-gradient-to-br from-primary to-blue-600 rounded-3xl flex items-center justify-center mb-6 group-hover:scale-105 transition-transform duration-300">
+                                    <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                    </svg>
+                                </div>
+
+                                <p class="text-body font-body text-lg leading-relaxed mb-6">
+                                    Deep dive into your website's loading times, Core Web Vitals, and technical
+                                    performance
+                                    to identify bottlenecks slowing down your growth.
+                                </p>
+
+                                <!-- Feature bullets -->
+                                <div class="space-y-3">
+                                    <div class="flex items-center">
+                                        <div class="w-2 h-2 bg-primary rounded-full mr-3"></div>
+                                        <span class="text-body font-body">Page load speed analysis</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <div class="w-2 h-2 bg-primary rounded-full mr-3"></div>
+                                        <span class="text-body font-body">Mobile performance audit</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <div class="w-2 h-2 bg-primary rounded-full mr-3"></div>
+                                        <span class="text-body font-body">Image & asset optimization</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <div class="w-2 h-2 bg-primary rounded-full mr-3"></div>
+                                        <span class="text-body font-body">Core Web Vitals scoring</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Design & UX Feedback -->
+                        <div class="group lg:mt-8">
+                            <div class="feature-card rounded-3xl p-8 h-full relative overflow-hidden">
+                                <!-- Top accent line -->
+                                <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-accent to-green-500">
+                                </div>
+
+                                <!-- Checkmark with animation -->
+                                <div class="flex items-center mb-6">
+
+                                    <h3 class="font-heading text-2xl font-bold text-dark">Design & UX Feedback</h3>
+                                </div>
+
+                                <!-- Icon -->
+                                <div
+                                    class="w-20 h-20 bg-gradient-to-br from-accent to-green-600 rounded-3xl flex items-center justify-center mb-6 group-hover:scale-105 transition-transform duration-300">
+                                    <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zM21 5a2 2 0 00-2-2h-4a2 2 0 00-2 2v12a4 4 0 004 4h4a2 2 0 002-2V5z">
+                                        </path>
+                                    </svg>
+                                </div>
+
+                                <p class="text-body font-body text-lg leading-relaxed mb-6">
+                                    Comprehensive evaluation of your visual design, user experience flow, and conversion
+                                    optimization opportunities.
+                                </p>
+
+                                <!-- Feature bullets -->
+                                <div class="space-y-3">
+                                    <div class="flex items-center">
+                                        <div class="w-2 h-2 bg-accent rounded-full mr-3"></div>
+                                        <span class="text-body font-body">Visual hierarchy assessment</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <div class="w-2 h-2 bg-accent rounded-full mr-3"></div>
+                                        <span class="text-body font-body">Navigation & user flow</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <div class="w-2 h-2 bg-accent rounded-full mr-3"></div>
+                                        <span class="text-body font-body">Call-to-action optimization</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <div class="w-2 h-2 bg-accent rounded-full mr-3"></div>
+                                        <span class="text-body font-body">Mobile responsiveness</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Marketing & SEO Suggestions -->
+                        <div class="group">
+                            <div class="feature-card rounded-3xl p-8 h-full relative overflow-hidden">
+                                <!-- Top accent line -->
+                                <div
+                                    class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-purple-500 to-primary">
+                                </div>
+
+                                <!-- Checkmark with animation -->
+                                <div class="flex items-center mb-6">
+
+                                    <h3 class="font-heading text-2xl font-bold text-dark">Marketing & SEO Suggestions
+                                    </h3>
+                                </div>
+
+                                <!-- Icon -->
+                                <div
+                                    class="w-20 h-20 bg-gradient-to-br from-purple-500 to-primary rounded-3xl flex items-center justify-center mb-6 group-hover:scale-105 transition-transform duration-300">
+                                    <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                                    </svg>
+                                </div>
+
+                                <p class="text-body font-body text-lg leading-relaxed mb-6">
+                                    Strategic recommendations to boost your search rankings, content performance, and
+                                    overall online visibility.
+                                </p>
+
+                                <!-- Feature bullets -->
+                                <div class="space-y-3">
+                                    <div class="flex items-center">
+                                        <div class="w-2 h-2 bg-purple-500 rounded-full mr-3"></div>
+                                        <span class="text-body font-body">Keyword optimization analysis</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <div class="w-2 h-2 bg-purple-500 rounded-full mr-3"></div>
+                                        <span class="text-body font-body">Content strategy recommendations</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <div class="w-2 h-2 bg-purple-500 rounded-full mr-3"></div>
+                                        <span class="text-body font-body">Technical SEO review</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <div class="w-2 h-2 bg-purple-500 rounded-full mr-3"></div>
+                                        <span class="text-body font-body">Competitor analysis insights</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Delivery Information -->
+                    <div class="text-center">
+                        <div class="delivery-card rounded-3xl p-8 max-w-2xl mx-auto">
+                            <div class="flex items-center justify-center mb-4">
+                                <div
+                                    class="w-16 h-16 bg-gradient-to-br from-primary to-accent rounded-2xl flex items-center justify-center mr-6">
+                                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                </div>
+                                <div class="text-left">
+                                    <h3 class="font-heading text-2xl font-bold text-dark mb-2">
+                                        🕒 Delivered in 24–48 hours via email
+                                    </h3>
+                                    <p class="text-body font-body text-lg">
+                                        Get your comprehensive audit report with actionable recommendations straight to
+                                        your
+                                        inbox.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Additional trust elements -->
+                            <div class="grid grid-cols-3 gap-6 mt-8 pt-6 border-t border-light">
+                                <div class="text-center">
+                                    <div class="text-2xl font-bold gradient-text mb-1">15+</div>
+                                    <div class="text-sm text-body font-body">Pages Analyzed</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-2xl font-bold gradient-text mb-1">50+</div>
+                                    <div class="text-sm text-body font-body">Checkpoints</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-2xl font-bold gradient-text mb-1">100%</div>
+                                    <div class="text-sm text-body font-body">Actionable</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- =========================== What You Get Section Here =========================== -->
+
+
+        <!-- =========================== Audit Form Section Here =========================== -->
+        <section class="py-16 lg:py-24 form-section-bg relative overflow-hidden">
+            <!-- Background Pattern -->
+            <div class="absolute inset-0 opacity-5">
+                <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <pattern id="hexagons" width="28" height="49" patternUnits="userSpaceOnUse">
+                            <path d="M13.99 1.25l6.08 3.5v7l-6.08 3.5-6.08-3.5v-7l6.08-3.5z" fill="none"
+                                stroke="#2f80ed" stroke-width="0.5" />
+                        </pattern>
+                    </defs>
+                    <rect width="100%" height="100%" fill="url(#hexagons)" />
+                </svg>
+            </div>
+
+            <!-- Floating Elements -->
+            <div class="absolute top-20 left-10 w-16 h-16 bg-primary opacity-8 rounded-2xl floating-icon"></div>
+            <div class="absolute top-40 right-16 w-12 h-12 bg-accent opacity-10 rounded-full floating-icon"
+                style="animation-delay: 1s;"></div>
+            <div class="absolute bottom-32 left-1/4 w-8 h-8 bg-primary opacity-12 rounded-full floating-icon"
+                style="animation-delay: 2s;"></div>
+            <div class="absolute bottom-20 right-1/3 w-10 h-10 bg-accent opacity-8 rounded-2xl floating-icon"
+                style="animation-delay: 1.5s;"></div>
+
+            <div class="container mx-auto px-6 lg:px-8">
+                <div class="max-w-4xl mx-auto">
+                    <!-- Section Header -->
+                    <div class="text-center mb-12">
+                        <div
+                            class="inline-flex items-center space-x-2 bg-white px-6 py-3 rounded-full border border-light shadow-sm mb-8">
+                            <div class="w-2 h-2 bg-accent rounded-full pulse-glow"></div>
+                            <span class="text-sm font-body text-body font-medium">Get Started Today</span>
+                        </div>
+
+                        <h2 class="font-heading text-4xl lg:text-6xl font-bold text-dark mb-6">
+                            Request Your <span class="gradient-text">Free Audit</span>
+                        </h2>
+
+                        <p class="text-xl text-body font-body leading-relaxed max-w-2xl mx-auto">
+                            Fill out the form below and we'll analyze your website within 24-48 hours. No commitment
+                            required.
+                        </p>
+                    </div>
+
+                    <!-- Form Container -->
+                    <div class="form-card rounded-3xl p-8 lg:p-12 relative">
+                        <!-- Decorative corner elements -->
+                        <div
+                            class="absolute top-0 left-0 w-20 h-20 bg-gradient-to-br from-primary to-transparent opacity-10 rounded-tl-3xl">
+                        </div>
+                        <div
+                            class="absolute bottom-0 right-0 w-20 h-20 bg-gradient-to-tl from-accent to-transparent opacity-10 rounded-br-3xl">
+                        </div>
+
+                        <form id="auditForm" class="space-y-6" onsubmit="handleSubmit(event)">
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <!-- Name Field -->
+                                <div class="space-y-2">
+                                    <label for="name"
+                                        class="font-heading text-lg font-semibold text-dark flex items-center">
+                                        Name <span class="required-asterisk ml-1">*</span>
+                                    </label>
+                                    <div class="relative">
+                                        <input type="text" id="name" name="name"
+                                            onblur="handleFieldBlur('name', this.value)"
+                                            oninput="handleFieldInput('name')"
+                                            class="form-input w-full px-4 py-4 rounded-xl font-body text-lg bg-white resize-none border-2 border-gray-300 hover:border-green-500 focus:border-blue-500 focus:ring-blue-200 transition-all duration-300"
+                                            placeholder="Your full name" required>
+                                        <div class="absolute inset-y-0 right-0 flex items-center pr-4">
+                                            <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor"
+                                                viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Email Field -->
+                                <div class="space-y-2">
+                                    <label for="email"
+                                        class="font-heading text-lg font-semibold text-dark flex items-center">
+                                        Email <span class="required-asterisk ml-1">*</span>
+                                    </label>
+                                    <div class="relative">
+                                        <input type="email" id="email" name="email"
+                                            onblur="handleFieldBlur('email', this.value)"
+                                            oninput="handleFieldInput('email')"
+                                            class="form-input w-full px-4 py-4 rounded-xl font-body text-lg bg-white resize-none border-2 border-gray-300 hover:border-green-500 focus:border-blue-500 focus:ring-blue-200 transition-all duration-300"
+                                            placeholder="your@email.com" required>
+                                        <div class="absolute inset-y-0 right-0 flex items-center pr-4">
+                                            <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor"
+                                                viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Website Field -->
+                            <div class="space-y-2">
+                                <label for="website"
+                                    class="font-heading text-lg font-semibold text-dark flex items-center">
+                                    Website URL <span class="required-asterisk ml-1">*</span>
+                                </label>
+                                <div class="relative">
+                                    <input type="url" id="website" name="website"
+                                        onblur="handleFieldBlur('website', this.value)"
+                                        oninput="handleFieldInput('website')"
+                                        class="pl-12 form-input w-full px-4 py-4 rounded-xl font-body text-lg bg-white resize-none border-2 border-gray-300 hover:border-green-500 focus:border-blue-500 focus:ring-blue-200 transition-all duration-300"
+                                        placeholder="https://yourwebsite.com" required>
+                                    <div class="absolute inset-y-0 left-0 flex items-center pl-4">
+                                        <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor"
+                                            viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9v-9m0-9v9"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Business Type -->
+                            <div class="space-y-2">
+                                <label for="businessType" class="font-heading text-lg font-semibold text-dark">
+                                    Business Type <span class="text-gray-400 text-sm font-body ml-2">(optional)</span>
+                                </label>
+                                <div class="relative">
+                                    <select id="businessType" name="businessType"
+                                        class="form-input w-full px-4 py-4 rounded-xl font-body text-lg bg-white appearance-none cursor-pointer border-2 border-gray-300 hover:border-green-500 focus:border-blue-500 focus:ring-blue-200 transition-all duration-300">
+                                        <option value="">Select your business type</option>
+                                        <option value="ecommerce">E-commerce</option>
+                                        <option value="saas">SaaS/Software</option>
+                                        <option value="agency">Agency/Services</option>
+                                        <option value="consulting">Consulting</option>
+                                        <option value="restaurant">Restaurant/Food</option>
+                                        <option value="healthcare">Healthcare</option>
+                                        <option value="education">Education</option>
+                                        <option value="nonprofit">Non-profit</option>
+                                        <option value="real-estate">Real Estate</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                    <div class="absolute inset-y-0 right-0 flex items-center pr-4 pointer-events-none">
+                                        <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor"
+                                            viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M19 9l-7 7-7-7"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Message -->
+                            <div class="space-y-2">
+                                <label for="message" class="font-heading text-lg font-semibold text-dark">
+                                    Message/Goals <span class="text-gray-400 text-sm font-body ml-2">(optional)</span>
+                                </label>
+                                <div class="relative">
+                                    <textarea id="message" name="message" rows="4"
+                                        class="form-input w-full px-4 py-4 rounded-xl font-body text-lg bg-white resize-none border-2 border-gray-300 hover:border-green-500 focus:border-blue-500 focus:ring-blue-200 transition-all duration-300"
+                                        placeholder="Tell us about your goals, challenges, or specific areas you'd like us to focus on..."></textarea>
+                                    <div class="absolute top-4 right-4">
+                                        <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor"
+                                            viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <div class="pt-6">
+                                <button type="submit" id="submitBtn"
+                                    class="btn-gradient w-full text-white font-heading font-bold text-xl px-8 py-5 rounded-xl shadow-lg hover-white inline-flex items-center justify-center space-x-3 relative overflow-hidden transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-2xl disabled:opacity-75 disabled:cursor-not-allowed">
+                                    <span>📨</span>
+                                    <span id="submitText">Get My Free Audit</span>
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M13 7l5 5m0 0l-5 5m5-5H6">
+                                        </path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- =========================== Audit Form Section Here =========================== -->
+    </main>
+
+    <footer class="footer-container">
+        <!-- Tech Background Pattern -->
+        <div class="tech-background">
+            <div class="circuit-pattern"></div>
+        </div>
+
+        <!-- Main Footer Content -->
+        <div class="footer-content">
+            <!-- Top Section with Brand and CTA -->
+            <div class="footer-top">
+                <div class="brand-section">
+                    <!-- Tech Logo Icon -->
+                    <div class="brand-wrapper">
+                        <div class="brand-icon">
+                            <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <h2 class="brand-title font-heading">
+                            Trustful <span class="brand-accent">VA</span>
+                        </h2>
+                    </div>
+                    <p class="brand-description font-body">
+                        Empowering businesses with reliable virtual assistance solutions.
+                        From web development to administrative tasks, we deliver excellence with trust.
+                    </p>
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="cta-buttons">
+                    <button class="btn-primary font-body">
+                        <svg class="btn-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                        Get Quote
+                    </button>
+                    <button class="btn-secondary font-body">
+                        <svg class="btn-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        Free Audit
+                    </button>
+                </div>
+            </div>
+
+            <!-- Links Grid -->
+            <div class="footer-links">
+                <div class="links-grid">
+                    <!-- About -->
+                    <div class="link-column">
+                        <h3 class="column-title font-heading">
+                            About Us
+                            <div class="title-underline primary-accent"></div>
+                        </h3>
+                        <ul class="link-list">
+                            <li><a href="#" class="link-item font-body">About Us</a></li>
+                            <li><a href="#" class="link-item font-body">Account Tiers</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Services -->
+                    <div class="link-column">
+                        <h3 class="column-title font-heading">
+                            Services
+                            <div class="title-underline accent-accent"></div>
+                        </h3>
+                        <ul class="link-list">
+                            <li><a href="/web-development" class="link-item font-body">Web Development Support</a></li>
+                            <li><a href="/data-entry" class="link-item font-body">Data Entry & Admin Tasks</a></li>
+                            <li><a href="/ecommerce-support" class="link-item font-body">Ecommerce Support</a></li>
+                            <li><a href="/social-media-assistant" class="link-item font-body">Social Media
+                                    Assistance</a></li>
+                            <li><a href="/personal-va" class="link-item font-body">Personal Virtual Assistant</a></li>
+                            <li><a href="/wordpress-maintenance" class="link-item font-body">WordPress Maintenance</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Partners -->
+                    <div class="link-column">
+                        <h3 class="column-title font-heading">
+                            Partners
+                            <div class="title-underline primary-accent"></div>
+                        </h3>
+                        <ul class="link-list">
+                            <li><a href="#" class="link-item font-body">AI Website Monitor</a></li>
+                            <li><a href="#" class="link-item font-body">Mydynamic VA</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="link-column">
+                        <h3 class="column-title font-heading">
+                            Quick Links
+                            <div class="title-underline accent-accent"></div>
+                        </h3>
+                        <ul class="link-list">
+                            <li><a href="#" class="link-item font-body">Pricing</a></li>
+                            <li><a href="#" class="link-item font-body">Portfolio / Case Studies</a></li>
+                            <li><a href="#" class="link-item font-body">Contact Us</a></li>
+                            <li><a href="#" class="link-item font-body">Blog</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Legal -->
+                    <div class="link-column">
+                        <h3 class="column-title font-heading">
+                            Legal
+                            <div class="title-underline primary-accent"></div>
+                        </h3>
+                        <ul class="link-list">
+                            <li><a href="#" class="link-item font-body">Privacy Policy</a></li>
+                            <li><a href="#" class="link-item font-body">Terms and Conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="footer-bottom">
+                <div class="bottom-content">
+                    <!-- Copyright -->
+                    <div class="copyright">
+                        <p class="copyright-text font-body">
+                            © 2025 <span class="brand-highlight">Trustful VA</span>. All rights reserved.
+                        </p>
+                        <p class="tagline font-body">
+                            Crafted with ❤️ for modern businesses
+                        </p>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="social-section">
+                        <span class="social-label font-body">Follow us:</span>
+                        <div class="social-links">
+                            <a href="#" class="social-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tech Decoration -->
+        <div class="tech-decoration">
+            <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="100" cy="100" r="80" fill="none" stroke="currentColor" stroke-width="1" />
+                <circle cx="100" cy="100" r="60" fill="none" stroke="currentColor" stroke-width="1" />
+                <circle cx="100" cy="100" r="40" fill="none" stroke="currentColor" stroke-width="1" />
+                <line x1="100" y1="20" x2="100" y2="40" stroke="currentColor" stroke-width="2" />
+                <line x1="100" y1="160" x2="100" y2="180" stroke="currentColor" stroke-width="2" />
+                <line x1="20" y1="100" x2="40" y2="100" stroke="currentColor" stroke-width="2" />
+                <line x1="160" y1="100" x2="180" y2="100" stroke="currentColor" stroke-width="2" />
+            </svg>
+        </div>
+    </footer>
+
+    <script src="/assets/js/script.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+
+</html>

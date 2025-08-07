@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TrustfulVA - Your Trusted Virtual Assistant</title>
+    <link rel="icon" type="image/x-icon" href="/assets/images/trustful-fav.png">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/service-pages/blog.css">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- DaisyUI CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/daisyui@latest"></script>
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="font-body text-body bg-white">
+
+<header>
+    <!-- Navigation Bar -->
+    <nav id="navbar" ref="navbar"
+        class="navbar fixed top-0 left-0 right-0 z-50 py-4 transition-all duration-300 w-full">
+        <div class="w-full max-w-full mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
+            <div class="flex justify-between items-center w-full">
+
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
+                        <span class="text-white font-heading font-bold text-lg">T</span>
+                    </div>
+                    <span class="font-heading font-bold text-xl text-dark">TrustfulVA</span>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex items-center space-x-6 xl:space-x-8">
+                    <a href="/index.html" class="menu-item font-body font-medium text-dark text-sm"
+                        active-class="menu-item-active" exact>Home</a>
+                    <a href="/about.html" class="menu-item font-body font-medium text-dark text-sm"
+                        active-class="menu-item-active">About Us</a>
+                    <a href="/services.html" class="menu-item font-body font-medium text-dark text-sm"
+                        active-class="menu-item-active">Services</a>
+                    <a href="/portfolio.html" class="menu-item font-body font-medium text-dark text-sm"
+                        active-class="menu-item-active">Portfolio</a>
+                    <a href="/pricing.html" class="menu-item font-body font-medium text-dark text-sm"
+                        active-class="menu-item-active">Pricing</a>
+                    <a href="/contact-us.html" class="menu-item font-body font-medium text-dark text-sm"
+                        active-class="menu-item-active">Contact Us</a>
+                    <a href="/services/blog.html" class="menu-item font-body font-medium text-dark text-sm menu-item-active"
+                        active-class="menu-item-active">Blog</a>
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="hidden md:flex items-center space-x-3">
+                    <a href="contact-us.html"
+                        class="bg-primary hover-primary text-white font-body font-semibold px-4 py-2 rounded-lg text-sm transition-all duration-300 hover:scale-105">
+                        Get Quote
+                    </a>
+                    <a href="free-audit.html"
+                        class="border-2 border-primary text-primary hover:bg-primary hover:text-white font-body font-semibold px-4 py-2 rounded-lg text-sm transition-all duration-300 hover-white">
+                        Free Audit
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" ref="mobileMenuBtn" @click="toggleMobileMenu"
+                    class="lg:hidden hamburger flex flex-col justify-center items-center w-8 h-8">
+                    <div class="hamburger-line line1 w-6 h-0.5 bg-dark mb-1"></div>
+                    <div class="hamburger-line line2 w-6 h-0.5 bg-dark mb-1"></div>
+                    <div class="hamburger-line line3 w-6 h-0.5 bg-dark"></div>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Overlay -->
+        <div id="mobile-menu" ref="mobileMenu"
+            class="mobile-menu fixed top-0 left-0 w-full h-screen bg-white z-40 lg:hidden">
+            <!-- Close Button -->
+            <div class="absolute top-6 right-6">
+                <button id="close-menu-btn" @click="closeMobileMenu"
+                    class="close-btn w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 hover:bg-gray-200 text-gray-600">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Menu Content -->
+            <div class="flex flex-col justify-center items-center h-full space-y-8 px-8">
+                <a href="index.html" class="menu-item font-body font-semibold text-dark text-xl mobile-menu-link"
+                    active-class="menu-item-active" exact>Home</a>
+                <a href="about.html" class="menu-item font-body font-semibold text-dark text-xl mobile-menu-link"
+                    active-class="menu-item-active">About Us</a>
+                <a href="services.html" class="menu-item font-body font-semibold text-dark text-xl mobile-menu-link"
+                    active-class="menu-item-active">Services</a>
+                <a href="pricing.html" class="menu-item font-body font-semibold text-dark text-xl mobile-menu-link"
+                    active-class="menu-item-active">Pricing</a>
+                <a href="portfolio.html" class="menu-item font-body font-semibold text-dark text-xl mobile-menu-link"
+                    active-class="menu-item-active">Portfolio</a>
+                <a href="contact-us.html" class="menu-item font-body font-semibold text-dark text-xl mobile-menu-link"
+                    active-class="menu-item-active">Contact Us</a>
+                <a href="services/blog.html"
+                    class="menu-item font-body font-semibold text-dark text-xl mobile-menu-link"
+                    active-class="menu-item-active">Blog</a>
+
+                <!-- Mobile CTA Buttons -->
+                <div class="flex flex-col space-y-4 mt-8 w-full max-w-xs">
+                    <a href="contact-us.html"
+                        class="bg-primary hover-primary text-white font-body font-semibold px-6 py-3 rounded-lg transition-all duration-300 w-full">
+                        Get Quote
+                    </a>
+                    <a href="free-audit.html"
+                        class="border-2 border-primary text-primary hover:bg-primary hover:text-white font-body font-semibold px-6 py-3 rounded-lg transition-all duration-300 w-full">
+                        Free Audit
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+    <main>
+        <!-- =========================== Banner Section Here =========================== -->
+            <section class="blog-coming-soon flex flex-col items-center justify-center h-full">
+                <div class="container mx-auto px-6 max-w-4xl ">
+                    <div class="content-wrapper">
+            
+                        <!-- Animated Icon -->
+                        <div class="icon-container">
+                            <div class="rotating-circle"></div>
+                            <div class="inner-icon">
+                                <svg class="w-12 h-12 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                                </svg>
+                            </div>
+                        </div>
+            
+                        <!-- Main Content -->
+                        <div class="text-center space-y-6">
+                            <h1 class="font-heading text-4xl lg:text-5xl font-bold text-dark">
+                                Our <span class="text-primary">Blogs</span> is
+                                <span class="text-accent">Coming Soon!</span>
+                            </h1>
+            
+            
+                        </div>
+            
+                    </div>
+                </div>
+            </section>
+        <!-- =========================== Banner Section Here =========================== -->
+    </main>
+
+    <footer class="footer-container">
+        <!-- Tech Background Pattern -->
+        <div class="tech-background">
+            <div class="circuit-pattern"></div>
+        </div>
+
+        <!-- Main Footer Content -->
+        <div class="footer-content">
+            <!-- Top Section with Brand and CTA -->
+            <div class="footer-top">
+                <div class="brand-section">
+                    <!-- Tech Logo Icon -->
+                    <div class="brand-wrapper">
+                        <div class="brand-icon">
+                            <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <h2 class="brand-title font-heading">
+                            Trustful <span class="brand-accent">VA</span>
+                        </h2>
+                    </div>
+                    <p class="brand-description font-body">
+                        Empowering businesses with reliable virtual assistance solutions.
+                        From web development to administrative tasks, we deliver excellence with trust.
+                    </p>
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="cta-buttons">
+                    <button class="btn-primary font-body">
+                        <svg class="btn-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                        Get Quote
+                    </button>
+                    <button class="btn-secondary font-body">
+                        <svg class="btn-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        Free Audit
+                    </button>
+                </div>
+            </div>
+
+            <!-- Links Grid -->
+            <div class="footer-links">
+                <div class="links-grid">
+                    <!-- About -->
+                    <div class="link-column">
+                        <h3 class="column-title font-heading">
+                            About Us
+                            <div class="title-underline primary-accent"></div>
+                        </h3>
+                        <ul class="link-list">
+                            <li><a href="#" class="link-item font-body">About Us</a></li>
+                            <li><a href="#" class="link-item font-body">Account Tiers</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Services -->
+                    <div class="link-column">
+                        <h3 class="column-title font-heading">
+                            Services
+                            <div class="title-underline accent-accent"></div>
+                        </h3>
+                        <ul class="link-list">
+                            <li><a href="/web-development" class="link-item font-body">Web Development Support</a></li>
+                            <li><a href="/data-entry" class="link-item font-body">Data Entry & Admin Tasks</a></li>
+                            <li><a href="/ecommerce-support" class="link-item font-body">Ecommerce Support</a></li>
+                            <li><a href="/social-media-assistant" class="link-item font-body">Social Media
+                                    Assistance</a></li>
+                            <li><a href="/personal-va" class="link-item font-body">Personal Virtual Assistant</a></li>
+                            <li><a href="/wordpress-maintenance" class="link-item font-body">WordPress Maintenance</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Partners -->
+                    <div class="link-column">
+                        <h3 class="column-title font-heading">
+                            Partners
+                            <div class="title-underline primary-accent"></div>
+                        </h3>
+                        <ul class="link-list">
+                            <li><a href="#" class="link-item font-body">AI Website Monitor</a></li>
+                            <li><a href="#" class="link-item font-body">Mydynamic VA</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="link-column">
+                        <h3 class="column-title font-heading">
+                            Quick Links
+                            <div class="title-underline accent-accent"></div>
+                        </h3>
+                        <ul class="link-list">
+                            <li><a href="#" class="link-item font-body">Pricing</a></li>
+                            <li><a href="#" class="link-item font-body">Portfolio / Case Studies</a></li>
+                            <li><a href="#" class="link-item font-body">Contact Us</a></li>
+                            <li><a href="#" class="link-item font-body">Blog</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Legal -->
+                    <div class="link-column">
+                        <h3 class="column-title font-heading">
+                            Legal
+                            <div class="title-underline primary-accent"></div>
+                        </h3>
+                        <ul class="link-list">
+                            <li><a href="#" class="link-item font-body">Privacy Policy</a></li>
+                            <li><a href="#" class="link-item font-body">Terms and Conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="footer-bottom">
+                <div class="bottom-content">
+                    <!-- Copyright -->
+                    <div class="copyright">
+                        <p class="copyright-text font-body">
+                            © 2025 <span class="brand-highlight">Trustful VA</span>. All rights reserved.
+                        </p>
+                        <p class="tagline font-body">
+                            Crafted with ❤️ for modern businesses
+                        </p>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="social-section">
+                        <span class="social-label font-body">Follow us:</span>
+                        <div class="social-links">
+                            <a href="#" class="social-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tech Decoration -->
+        <div class="tech-decoration">
+            <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="100" cy="100" r="80" fill="none" stroke="currentColor" stroke-width="1" />
+                <circle cx="100" cy="100" r="60" fill="none" stroke="currentColor" stroke-width="1" />
+                <circle cx="100" cy="100" r="40" fill="none" stroke="currentColor" stroke-width="1" />
+                <line x1="100" y1="20" x2="100" y2="40" stroke="currentColor" stroke-width="2" />
+                <line x1="100" y1="160" x2="100" y2="180" stroke="currentColor" stroke-width="2" />
+                <line x1="20" y1="100" x2="40" y2="100" stroke="currentColor" stroke-width="2" />
+                <line x1="160" y1="100" x2="180" y2="100" stroke="currentColor" stroke-width="2" />
+            </svg>
+        </div>
+    </footer>
+
+    <script src="/assets/js/script.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+
+</html>

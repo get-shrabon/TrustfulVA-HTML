@@ -1,0 +1,215 @@
+/* =========================== Banner Section CSS =========================== */
+
+/* Gradient Text for Web Development */
+.gradient-text {
+    background: linear-gradient(135deg, var(--primary-blue), var(--accent-green));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Complex Background Patterns */
+.hero-bg {
+    background:
+        radial-gradient(circle at 20% 50%, rgba(47, 128, 237, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(39, 174, 96, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 40% 80%, rgba(47, 128, 237, 0.05) 0%, transparent 50%);
+}
+
+/* Floating Animation */
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.float-animation {
+    animation: float 6s ease-in-out infinite;
+}
+
+/* Pulse Animation for Icons */
+@keyframes pulse-glow {
+
+    0%,
+    100% {
+        box-shadow: 0 0 5px rgba(47, 128, 237, 0.3);
+    }
+
+    50% {
+        box-shadow: 0 0 20px rgba(47, 128, 237, 0.6), 0 0 30px rgba(39, 174, 96, 0.3);
+    }
+}
+
+.pulse-glow {
+    animation: pulse-glow 3s ease-in-out infinite;
+}
+
+/* Geometric Shapes */
+.geometric-shape {
+    position: absolute;
+    opacity: 0.1;
+}
+
+.shape-1 {
+    top: 10%;
+    right: 15%;
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(45deg, var(--primary-blue), var(--accent-green));
+    transform: rotate(45deg);
+    border-radius: 20px;
+}
+
+.shape-2 {
+    top: 60%;
+    right: 5%;
+    width: 60px;
+    height: 60px;
+    background: var(--accent-green);
+    border-radius: 50%;
+}
+
+.shape-3 {
+    top: 30%;
+    left: 5%;
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(135deg, var(--primary-blue), transparent);
+    transform: rotate(15deg);
+    border-radius: 30px;
+}
+
+/* Badge Hover Effects */
+.badge-hover {
+    transition: all 0.3s ease;
+}
+
+.badge-hover:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(47, 128, 237, 0.2);
+}
+
+/* Button Gradient */
+.btn-gradient {
+    background: linear-gradient(135deg, var(--primary-blue), var(--accent-green));
+    transition: all 0.3s ease;
+}
+
+.btn-gradient:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 35px rgba(47, 128, 237, 0.3);
+}
+
+/* Code Block Animation */
+@keyframes code-flow {
+    0% {
+        opacity: 0.3;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.3;
+    }
+}
+
+.code-line {
+    animation: code-flow 4s ease-in-out infinite;
+}
+
+.code-line:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+.code-line:nth-child(3) {
+    animation-delay: 1s;
+}
+
+.code-line:nth-child(4) {
+    animation-delay: 1.5s;
+}
+/* =========================== Banner Section CSS =========================== */
+
+
+/* =========================== Whats Included Section CSS =========================== */
+
+.gradient-text {
+    background: linear-gradient(135deg, var(--primary-blue), var(--accent-green));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Benefit Card Hover */
+.benefit-card {
+    transition: all 0.3s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(47, 128, 237, 0.15);
+}
+
+/* Icon Hover Animation */
+.icon-container {
+    transition: all 0.3s ease;
+}
+
+.benefit-card:hover .icon-container {
+    transform: scale(1.1);
+    background: linear-gradient(135deg, var(--primary-blue), var(--accent-green));
+}
+
+.benefit-card:hover .icon-container i {
+    color: white !important;
+}
+
+/* Staggered Animation */
+.benefit-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.benefit-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.benefit-card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.benefit-card:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.benefit-card:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+.benefit-card:nth-child(6) {
+    animation-delay: 0.6s;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in {
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+/* =========================== Whats Included Section CSS =========================== */

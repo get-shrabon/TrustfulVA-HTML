@@ -1,0 +1,561 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- SEO Meta Tags -->
+        <title>Contact TrustfulVA | Get Your Free Virtual Assistant Consultation</title>
+        <meta name="description"
+            content="Get in touch with TrustfulVA for professional virtual assistant services. Free consultation available. Contact us via phone, email, or our contact form. We're here to help your business grow!">
+        <meta name="keywords"
+            content="contact TrustfulVA, virtual assistant contact, free VA consultation, get in touch, virtual assistant inquiry, business support contact, professional VA services">
+        <meta name="author" content="TrustfulVA">
+        <meta name="robots" content="index, follow">
+
+        <!-- Open Graph / Social Media Meta Tags -->
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Contact TrustfulVA | Get Your Free Virtual Assistant Consultation">
+        <meta property="og:description"
+            content="Get in touch with TrustfulVA for professional virtual assistant services. Free consultation available.">
+        <meta property="og:image" content="/assets/images/trustful-fav.png">
+        <meta property="og:url" content="https://trustfulva.com/contact">
+        <meta property="og:site_name" content="TrustfulVA">
+
+        <!-- Twitter Meta Tags -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Contact TrustfulVA | Get Your Free Virtual Assistant Consultation">
+        <meta name="twitter:description"
+            content="Get in touch with TrustfulVA for professional virtual assistant services. Free consultation available.">
+        <meta name="twitter:image" content="/assets/images/trustful-fav.png">
+
+        <!-- Additional SEO Meta Tags -->
+        <meta name="theme-color" content="#2f80ed">
+        <meta name="msapplication-TileColor" content="#2f80ed">
+        <link rel="canonical" href="https://trustfulva.com/contact">
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="/assets/images/trustful-fav.png">
+        <link rel="apple-touch-icon" href="/assets/images/trustful-fav.png">
+
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="/assets/css/style.css">
+        <link rel="stylesheet" href="/assets/css/contact-us.css">
+        <!-- Tailwind CSS CDN -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <!-- DaisyUI CDN -->
+        <script src="https://cdn.jsdelivr.net/npm/daisyui@latest"></script>
+
+        <!-- Swiper CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <!-- Google Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet">
+        <!-- FontAwesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+
+<body class="font-body text-body bg-white">
+
+    <header>
+        <!-- Navigation Bar -->
+        <nav id="navbar" ref="navbar"
+            class="navbar fixed top-0 left-0 right-0 z-50 py-4 transition-all duration-300 w-full">
+            <div class="w-full max-w-full mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
+                <div class="flex justify-between items-center w-full">
+
+                    <!-- Logo -->
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
+                            <span class="text-white font-heading font-bold text-lg">T</span>
+                        </div>
+                        <span class="font-heading font-bold text-xl text-dark">TrustfulVA</span>
+                    </div>
+
+                    <!-- Desktop Menu -->
+                    <div class="hidden lg:flex items-center space-x-6 xl:space-x-8">
+                        <a href="index.html" class="menu-item font-body font-medium text-dark text-sm"
+                            active-class="menu-item-active" exact>Home</a>
+                        <a href="about.html" class="menu-item font-body font-medium text-dark text-sm"
+                            active-class="menu-item-active">About Us</a>
+                        <a href="services.html" class="menu-item font-body font-medium text-dark text-sm"
+                            active-class="menu-item-active">Services</a>
+                        <a href="portfolio.html" class="menu-item font-body font-medium text-dark text-sm"
+                            active-class="menu-item-active">Portfolio</a>
+                        <a href="pricing.html" class="menu-item font-body font-medium text-dark text-sm"
+                            active-class="menu-item-active">Pricing</a>
+                        <a href="contact-us.html"
+                            class="menu-item font-body font-medium text-dark text-sm menu-item-active"
+                            active-class="menu-item-active">Contact Us</a>
+                        <a href="services/blog.html" class="menu-item font-body font-medium text-dark text-sm"
+                            active-class="menu-item-active">Blog</a>
+                    </div>
+
+                    <!-- CTA Buttons -->
+                    <div class="hidden md:flex items-center space-x-3">
+                        <a href="contact-us.html"
+                            class="bg-primary hover-primary text-white font-body font-semibold px-4 py-2 rounded-lg text-sm transition-all duration-300 hover:scale-105">
+                            Get Quote
+                        </a>
+                        <a href="free-audit.html"
+                            class="border-2 border-primary text-primary hover:bg-primary hover:text-white font-body font-semibold px-4 py-2 rounded-lg text-sm transition-all duration-300 hover-white header_audit_btn">
+                            Free Audit
+                        </a>
+                    </div>
+
+                    <!-- Mobile Menu Button -->
+                    <button id="mobile-menu-btn" ref="mobileMenuBtn" @click="toggleMobileMenu"
+                        class="lg:hidden hamburger flex flex-col justify-center items-center w-8 h-8">
+                        <div class="hamburger-line line1 w-6 h-0.5 bg-dark mb-1"></div>
+                        <div class="hamburger-line line2 w-6 h-0.5 bg-dark mb-1"></div>
+                        <div class="hamburger-line line3 w-6 h-0.5 bg-dark"></div>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu Overlay -->
+            <div id="mobile-menu" ref="mobileMenu"
+                class="mobile-menu fixed top-0 left-0 w-full h-screen bg-white z-40 lg:hidden">
+                <!-- Close Button -->
+                <div class="absolute top-6 right-6">
+                    <button id="close-menu-btn" @click="closeMobileMenu"
+                        class="close-btn w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 hover:bg-gray-200 text-gray-600">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Menu Content -->
+                <div class="flex flex-col justify-center items-center h-full space-y-8 px-8">
+                    <a href="index.html" class="menu-item font-body font-semibold text-dark text-xl mobile-menu-link"
+                        active-class="menu-item-active" exact>Home</a>
+                    <a href="about.html" class="menu-item font-body font-semibold text-dark text-xl mobile-menu-link"
+                        active-class="menu-item-active">About Us</a>
+                    <a href="services.html" class="menu-item font-body font-semibold text-dark text-xl mobile-menu-link"
+                        active-class="menu-item-active">Services</a>
+                    <a href="pricing.html" class="menu-item font-body font-semibold text-dark text-xl mobile-menu-link"
+                        active-class="menu-item-active">Pricing</a>
+                    <a href="portfolio.html"
+                        class="menu-item font-body font-semibold text-dark text-xl mobile-menu-link"
+                        active-class="menu-item-active">Portfolio</a>
+                    <a href="contact-us.html"
+                        class="menu-item font-body font-semibold text-dark text-xl mobile-menu-link"
+                        active-class="menu-item-active">Contact Us</a>
+                    <a href="services/blog.html"
+                        class="menu-item font-body font-semibold text-dark text-xl mobile-menu-link"
+                        active-class="menu-item-active">Blog</a>
+
+                    <!-- Mobile CTA Buttons -->
+                    <div class="flex flex-col space-y-4 mt-8 w-full max-w-xs">
+                        <a href="contact-us.html"
+                            class="bg-primary hover-primary text-white font-body font-semibold px-6 py-3 rounded-lg transition-all duration-300 w-full">
+                            Get Quote
+                        </a>
+                        <a href="free-audit.html"
+                            class="border-2 border-primary text-primary hover:bg-primary hover:text-white font-body font-semibold px-6 py-3 rounded-lg transition-all duration-300 w-full">
+                            Free Audit
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- =========================== Banner Section Here =========================== -->
+        <!-- Banner -->
+        <section class="contact-banner bg-light relative overflow-hidden py-20 lg:py-28 lg:pt-32">
+            <div class="banner-decoration"></div>
+
+            <div class="container mx-auto px-6 lg:px-12 relative z-10">
+                <div class="max-w-4xl mx-auto text-center">
+                    <!-- Breadcrumb -->
+                    <div class="fade-in mb-6">
+                        <nav class="font-body text-sm">
+                            <span class="text-body">Home</span>
+                            <span class="text-body mx-2">•</span>
+                            <span class="text-primary font-medium">Contact Us</span>
+                        </nav>
+                    </div>
+
+                    <!-- Main Heading -->
+                    <div class="fade-in">
+                        <h1 class="font-heading text-4xl lg:text-6xl font-bold text-dark mb-6 text-shadow">
+                            Get In
+                            <span class="text-primary">Touch</span>
+                        </h1>
+
+                        <div class="w-24 h-1 bg-accent mx-auto mb-8 rounded-full"></div>
+
+                        <p class="font-body text-lg lg:text-xl text-body max-w-2xl mx-auto leading-relaxed">
+                            We'd love to hear from you. Send us a message and we'll respond as soon as possible.
+                        </p>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+        <!-- Banner -->
+        <section class="pt-24 pb-16 bg-light min-h-screen">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+
+
+                <!-- Main Content Grid -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
+                    <!-- Left Column - Form -->
+                    <div class="space-y-8">
+
+
+                        <!-- Quick Contact -->
+                        <div class="bg-white rounded-2xl p-8 shadow-sm">
+                            <h3 class="font-heading text-xl font-semibold text-dark mb-6">Quick Contact</h3>
+
+                            <div class="space-y-6">
+                                <!-- Email -->
+                                <div class="flex items-center">
+                                    <div class="contact-icon bg-blue-50 text-primary">
+                                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <p class="text-sm text-body">Email:</p>
+                                        <p class="text-dark font-medium">info@trustfulva.com</p>
+                                    </div>
+                                </div>
+
+                                <!-- Phone -->
+                                <div class="flex items-center">
+                                    <div class="contact-icon bg-green-50 text-accent">
+                                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <p class="text-sm text-body">Phone Number</p>
+                                        <p class="text-dark font-medium">US + 1 (313) 900-6241</p>
+                                    </div>
+                                </div>
+
+                                <!-- Address -->
+                                <div class="flex items-center">
+                                    <div class="contact-icon bg-purple-50 text-purple-600">
+                                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <p class="text-sm text-body">Headquater</p>
+                                        <p class="text-dark font-medium">US - New York</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Contact Person Image -->
+                        <div class="bg-white rounded-2xl p-8 text-center shadow-sm relative overflow-hidden">
+                            <div class="absolute inset-0 bg-gradient-to-br from-blue-50 to-green-50 opacity-50"></div>
+                            <div class="relative z-10">
+                                <!-- Professional contact person image from Unsplash -->
+                                <img src="../assets/images/contact-us-vector.jpg" alt="Professional contact person"
+                                    class="w-full h-96 mx-auto mb-6 rounded-2xl object-cover shadow-lg">
+                                <p class="text-body text-sm">
+                                    Ready to help you with your virtual assistant needs
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column - Image & Contact Info -->
+
+                    <div class="bg-white rounded-2xl p-8 shadow-sm">
+                        <h2 class="font-heading text-2xl md:text-3xl font-bold text-dark mb-4">
+                            Let's Talk!
+                        </h2>
+                        <p class="text-body mb-8">
+                            Get in touch with us using the enquiry form or contact details below.
+                        </p>
+
+                        <form class="space-y-6">
+                            <!-- Name Fields -->
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-sm font-medium text-dark mb-2">First Name</label>
+                                    <input type="text" placeholder="Shasanko" class="form-input">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-dark mb-2">Last Name</label>
+                                    <input type="text" placeholder="Das" class="form-input">
+                                </div>
+                            </div>
+
+                            <!-- Email -->
+                            <div>
+                                <label class="block text-sm font-medium text-dark mb-2">Email</label>
+                                <input type="email" placeholder="uluxshasankodas@gmail.com" class="form-input">
+                            </div>
+
+                            <!-- Message -->
+                            <div>
+                                <label class="block text-sm font-medium text-dark mb-2">Message</label>
+                                <textarea placeholder="Type something..." class="form-input form-textarea"></textarea>
+                            </div>
+
+                            <!-- Checkboxes -->
+                            <div class="space-y-3">
+                                <div class="flex items-start">
+                                    <input type="checkbox" id="communication" class="checkbox-custom mt-1">
+                                    <label for="communication" class="text-sm text-body">
+                                        I agree to receive other communication messages.*
+                                    </label>
+                                </div>
+                                <div class="flex items-start">
+                                    <input type="checkbox" id="consent" class="checkbox-custom mt-1">
+                                    <label for="consent" class="text-sm text-body">
+                                        I give my consent to ROI7 Presenter to store my data.*
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Privacy Notice -->
+                            <div class="text-xs text-body bg-gray-50 p-4 rounded-lg">
+                                ROI7 Presenter, a project of ROIFORCIO GmbH, is committed to protecting and respecting
+                                your
+                                privacy, and we'll only use your personal information to administer your account and to
+                                provide the products and services you requested from us. From time to time, we would
+                                like to
+                                contact you about our products and services, as well as other content that may be of
+                                interest to you.
+                            </div>
+
+                            <!-- Submit Button -->
+                            <button type="submit"
+                                class="w-full bg-primary hover-primary text-white font-heading font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-[1.02]">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- =========================== Banner Section Here =========================== -->
+
+        <!-- =========================== Partners Section Here =========================== -->
+        <section class="partners-trust-section">
+            <div class="container">
+                <!-- Heading -->
+                <div class="partners-trust-heading">
+                    <h2 class="partners-heading">
+                        Trusted by 30,000+ Companies
+                    </h2>
+                    <p class="partners-description">
+                        Join thousands of businesses worldwide who trust our virtual assistant services to streamline
+                        their operations and boost productivity.
+                    </p>
+                </div>
+
+                <!-- Slider -->
+                <div class="partners-slider-container">
+                    <div class="swiper partners-swiper">
+                        <div class="swiper-wrapper" id="partnersWrapper">
+                            <!-- Slides will be inserted by JS -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- =========================== Partners Section Here =========================== -->
+    </main>
+
+    <footer class="footer-container">
+        <!-- Tech Background Pattern -->
+        <div class="tech-background">
+            <div class="circuit-pattern"></div>
+        </div>
+
+        <!-- Main Footer Content -->
+        <div class="footer-content">
+            <!-- Top Section with Brand and CTA -->
+            <div class="footer-top">
+                <div class="brand-section">
+                    <!-- Tech Logo Icon -->
+                    <div class="brand-wrapper">
+                        <div class="brand-icon">
+                            <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <h2 class="brand-title font-heading">
+                            Trustful <span class="brand-accent">VA</span>
+                        </h2>
+                    </div>
+                    <p class="brand-description font-body">
+                        Empowering businesses with reliable virtual assistance solutions.
+                        From web development to administrative tasks, we deliver excellence with trust.
+                    </p>
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="cta-buttons">
+                    <button class="btn-primary font-body">
+                        <svg class="btn-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                        Get Quote
+                    </button>
+                    <button class="btn-secondary font-body">
+                        <svg class="btn-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        Free Audit
+                    </button>
+                </div>
+            </div>
+
+            <!-- Links Grid -->
+            <div class="footer-links">
+                <div class="links-grid">
+                    <!-- About -->
+                    <div class="link-column">
+                        <h3 class="column-title font-heading">
+                            About Us
+                            <div class="title-underline primary-accent"></div>
+                        </h3>
+                        <ul class="link-list">
+                            <li><a href="#" class="link-item font-body">About Us</a></li>
+                            <li><a href="#" class="link-item font-body">Account Tiers</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Services -->
+                    <div class="link-column">
+                        <h3 class="column-title font-heading">
+                            Services
+                            <div class="title-underline accent-accent"></div>
+                        </h3>
+                        <ul class="link-list">
+                            <li><a href="/web-development" class="link-item font-body">Web Development Support</a></li>
+                            <li><a href="/data-entry" class="link-item font-body">Data Entry & Admin Tasks</a></li>
+                            <li><a href="/ecommerce-support" class="link-item font-body">Ecommerce Support</a></li>
+                            <li><a href="/social-media-assistant" class="link-item font-body">Social Media
+                                    Assistance</a></li>
+                            <li><a href="/personal-va" class="link-item font-body">Personal Virtual Assistant</a></li>
+                            <li><a href="/wordpress-maintenance" class="link-item font-body">WordPress Maintenance</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Partners -->
+                    <div class="link-column">
+                        <h3 class="column-title font-heading">
+                            Partners
+                            <div class="title-underline primary-accent"></div>
+                        </h3>
+                        <ul class="link-list">
+                            <li><a href="#" class="link-item font-body">AI Website Monitor</a></li>
+                            <li><a href="#" class="link-item font-body">Mydynamic VA</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="link-column">
+                        <h3 class="column-title font-heading">
+                            Quick Links
+                            <div class="title-underline accent-accent"></div>
+                        </h3>
+                        <ul class="link-list">
+                            <li><a href="#" class="link-item font-body">Pricing</a></li>
+                            <li><a href="#" class="link-item font-body">Portfolio / Case Studies</a></li>
+                            <li><a href="#" class="link-item font-body">Contact Us</a></li>
+                            <li><a href="#" class="link-item font-body">Blog</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Legal -->
+                    <div class="link-column">
+                        <h3 class="column-title font-heading">
+                            Legal
+                            <div class="title-underline primary-accent"></div>
+                        </h3>
+                        <ul class="link-list">
+                            <li><a href="#" class="link-item font-body">Privacy Policy</a></li>
+                            <li><a href="#" class="link-item font-body">Terms and Conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="footer-bottom">
+                <div class="bottom-content">
+                    <!-- Copyright -->
+                    <div class="copyright">
+                        <p class="copyright-text font-body">
+                            © 2025 <span class="brand-highlight">Trustful VA</span>. All rights reserved.
+                        </p>
+                        <p class="tagline font-body">
+                            Crafted with ❤️ for modern businesses
+                        </p>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="social-section">
+                        <span class="social-label font-body">Follow us:</span>
+                        <div class="social-links">
+                            <a href="#" class="social-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tech Decoration -->
+        <div class="tech-decoration">
+            <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="100" cy="100" r="80" fill="none" stroke="currentColor" stroke-width="1" />
+                <circle cx="100" cy="100" r="60" fill="none" stroke="currentColor" stroke-width="1" />
+                <circle cx="100" cy="100" r="40" fill="none" stroke="currentColor" stroke-width="1" />
+                <line x1="100" y1="20" x2="100" y2="40" stroke="currentColor" stroke-width="2" />
+                <line x1="100" y1="160" x2="100" y2="180" stroke="currentColor" stroke-width="2" />
+                <line x1="20" y1="100" x2="40" y2="100" stroke="currentColor" stroke-width="2" />
+                <line x1="160" y1="100" x2="180" y2="100" stroke="currentColor" stroke-width="2" />
+            </svg>
+        </div>
+    </footer>
+
+    <script src="/assets/js/script.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+{
+	"name": "trustfulva-html",
+	"version": "1.0.0",
+	"description": "TrustfulVA website with HTML, CSS and JavaScript",
+	"main": "index.html",
+	"scripts": {
+		"build-css": "tailwindcss -i ./assets/css/style.css -o ./assets/css/output.css --watch",
+		"serve": "python -m http.server 8000"
+	},
+	"devDependencies": {
+		"tailwindcss": "^3.4.0",
+		"daisyui": "^4.12.10"
+	},
+	"keywords": [
+		"html",
+		"css",
+		"javascript",
+		"tailwind",
+		"daisyui"
+	],
+	"author": "TrustfulVA",
+	"license": "MIT"
+}

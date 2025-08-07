@@ -1,0 +1,94 @@
+{
+	"@context": "https://schema.org",
+	"@type": "Organization",
+	"name": "TrustfulVA",
+	"description": "Professional virtual assistant services for businesses worldwide",
+	"url": "https://trustfulva.com",
+	"logo": "https://trustfulva.com/assets/images/trustful-fav.png",
+	"foundingDate": "2024",
+	"contactPoint": {
+		"@type": "ContactPoint",
+		"contactType": "customer service",
+		"availableLanguage": ["English"]
+	},
+	"address": {
+		"@type": "PostalAddress",
+		"addressCountry": "Global"
+	},
+	"sameAs": [
+		"https://facebook.com/trustfulva",
+		"https://twitter.com/trustfulva",
+		"https://linkedin.com/company/trustfulva",
+		"https://instagram.com/trustfulva"
+	],
+	"serviceType": [
+		"Virtual Assistant Services",
+		"Web Development Support",
+		"Data Entry Services",
+		"Ecommerce Support",
+		"Social Media Management",
+		"WordPress Maintenance",
+		"Business Support Services"
+	],
+	"areaServed": "Worldwide",
+	"hasOfferCatalog": {
+		"@type": "OfferCatalog",
+		"name": "Virtual Assistant Services",
+		"itemListElement": [
+			{
+				"@type": "Offer",
+				"itemOffered": {
+					"@type": "Service",
+					"name": "Web Development Support",
+					"description": "Expert assistance with website development, maintenance, and optimization"
+				}
+			},
+			{
+				"@type": "Offer",
+				"itemOffered": {
+					"@type": "Service",
+					"name": "Data Entry & Admin Tasks",
+					"description": "Accurate and efficient data management services"
+				}
+			},
+			{
+				"@type": "Offer",
+				"itemOffered": {
+					"@type": "Service",
+					"name": "Ecommerce Support",
+					"description": "Comprehensive ecommerce management for Shopify, WooCommerce, and other platforms"
+				}
+			},
+			{
+				"@type": "Offer",
+				"itemOffered": {
+					"@type": "Service",
+					"name": "Social Media Assistance",
+					"description": "Strategic social media management to boost your online presence"
+				}
+			},
+			{
+				"@type": "Offer",
+				"itemOffered": {
+					"@type": "Service",
+					"name": "Personal Virtual Assistant",
+					"description": "Dedicated personal assistance for busy professionals and entrepreneurs"
+				}
+			},
+			{
+				"@type": "Offer",
+				"itemOffered": {
+					"@type": "Service",
+					"name": "WordPress Maintenance",
+					"description": "Complete WordPress care and maintenance services"
+				}
+			}
+		]
+	},
+	"aggregateRating": {
+		"@type": "AggregateRating",
+		"ratingValue": "4.9",
+		"reviewCount": "127",
+		"bestRating": "5"
+	}
+}

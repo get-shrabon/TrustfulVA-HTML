@@ -1,0 +1,1397 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- SEO Meta Tags -->
+        <title>Portfolio & Case Studies | TrustfulVA Success Stories | Virtual Assistant Projects</title>
+        <meta name="description"
+            content="Explore TrustfulVA's portfolio of successful virtual assistant projects and case studies. See how we've helped businesses with web development, ecommerce support, data management, and digital marketing solutions.">
+        <meta name="keywords"
+            content="virtual assistant portfolio, VA case studies, successful projects, web development portfolio, ecommerce support examples, data entry projects, social media management results, WordPress maintenance cases">
+        <meta name="author" content="TrustfulVA">
+        <meta name="robots" content="index, follow">
+
+        <!-- Open Graph / Social Media Meta Tags -->
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Portfolio & Case Studies | TrustfulVA Success Stories">
+        <meta property="og:description"
+            content="Explore TrustfulVA's portfolio of successful virtual assistant projects and case studies. See real results from our professional VA services.">
+        <meta property="og:image" content="/assets/images/trustful-fav.png">
+        <meta property="og:url" content="https://trustfulva.com/portfolio">
+        <meta property="og:site_name" content="TrustfulVA">
+
+        <!-- Twitter Meta Tags -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Portfolio & Case Studies | TrustfulVA Success Stories">
+        <meta name="twitter:description"
+            content="Explore TrustfulVA's portfolio of successful virtual assistant projects and case studies. See real results from our professional VA services.">
+        <meta name="twitter:image" content="/assets/images/trustful-fav.png">
+
+        <!-- Additional SEO Meta Tags -->
+        <meta name="theme-color" content="#2f80ed">
+        <meta name="msapplication-TileColor" content="#2f80ed">
+        <link rel="canonical" href="https://trustfulva.com/portfolio">
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="/assets/images/trustful-fav.png">
+        <link rel="apple-touch-icon" href="/assets/images/trustful-fav.png">
+        <!-- Tailwind CSS CDN -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="/assets/css/style.css">
+        <link rel="stylesheet" href="/assets/css/portfolio.css">
+        <!-- DaisyUI CDN -->
+        <script src="https://cdn.jsdelivr.net/npm/daisyui@latest"></script>
+
+        <!-- Swiper CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <!-- Google Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet">
+        <!-- FontAwesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+
+<body class="font-body text-body bg-white">
+
+    <header>
+        <!-- Navigation Bar -->
+        <nav id="navbar" ref="navbar"
+            class="navbar fixed top-0 left-0 right-0 z-50 py-4 transition-all duration-300 w-full">
+            <div class="w-full max-w-full mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
+                <div class="flex justify-between items-center w-full">
+
+                    <!-- Logo -->
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
+                            <span class="text-white font-heading font-bold text-lg">T</span>
+                        </div>
+                        <span class="font-heading font-bold text-xl text-dark">TrustfulVA</span>
+                    </div>
+
+                    <!-- Desktop Menu -->
+                    <div class="hidden lg:flex items-center space-x-6 xl:space-x-8">
+                        <a href="index.html" class="menu-item font-body font-medium text-dark text-sm"
+                            active-class="menu-item-active" exact>Home</a>
+                        <a href="about.html" class="menu-item font-body font-medium text-dark text-sm"
+                            active-class="menu-item-active">About Us</a>
+                        <a href="services.html" class="menu-item font-body font-medium text-dark text-sm"
+                            active-class="menu-item-active">Services</a>
+                        <a href="portfolio.html"
+                            class="menu-item font-body font-medium text-dark text-sm menu-item-active"
+                            active-class="menu-item-active">Portfolio</a>
+                        <a href="pricing.html" class="menu-item font-body font-medium text-dark text-sm"
+                            active-class="menu-item-active">Pricing</a>
+                        <a href="contact-us.html" class="menu-item font-body font-medium text-dark text-sm"
+                            active-class="menu-item-active">Contact Us</a>
+                        <a href="services/blog.html" class="menu-item font-body font-medium text-dark text-sm"
+                            active-class="menu-item-active">Blog</a>
+                    </div>
+
+                    <!-- CTA Buttons -->
+                    <div class="hidden md:flex items-center space-x-3">
+                        <a href="contact-us.html"
+                            class="bg-primary hover-primary text-white font-body font-semibold px-4 py-2 rounded-lg text-sm transition-all duration-300 hover:scale-105">
+                            Get Quote
+                        </a>
+                        <a href="free-audit.html"
+                            class="border-2 border-primary text-primary hover:bg-primary hover:text-white font-body font-semibold px-4 py-2 rounded-lg text-sm transition-all duration-300 hover-white header_audit_btn">
+                            Free Audit
+                        </a>
+                    </div>
+
+                    <!-- Mobile Menu Button -->
+                    <button id="mobile-menu-btn" ref="mobileMenuBtn" @click="toggleMobileMenu"
+                        class="lg:hidden hamburger flex flex-col justify-center items-center w-8 h-8">
+                        <div class="hamburger-line line1 w-6 h-0.5 bg-dark mb-1"></div>
+                        <div class="hamburger-line line2 w-6 h-0.5 bg-dark mb-1"></div>
+                        <div class="hamburger-line line3 w-6 h-0.5 bg-dark"></div>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu Overlay -->
+            <div id="mobile-menu" ref="mobileMenu"
+                class="mobile-menu fixed top-0 left-0 w-full h-screen bg-white z-40 lg:hidden">
+                <!-- Close Button -->
+                <div class="absolute top-6 right-6">
+                    <button id="close-menu-btn" @click="closeMobileMenu"
+                        class="close-btn w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 hover:bg-gray-200 text-gray-600">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Menu Content -->
+                <div class="flex flex-col justify-center items-center h-full space-y-8 px-8">
+                    <a href="index.html" class="menu-item font-body font-semibold text-dark text-xl mobile-menu-link"
+                        active-class="menu-item-active" exact>Home</a>
+                    <a href="about.html" class="menu-item font-body font-semibold text-dark text-xl mobile-menu-link"
+                        active-class="menu-item-active">About Us</a>
+                    <a href="services.html" class="menu-item font-body font-semibold text-dark text-xl mobile-menu-link"
+                        active-class="menu-item-active">Services</a>
+                    <a href="pricing.html" class="menu-item font-body font-semibold text-dark text-xl mobile-menu-link"
+                        active-class="menu-item-active">Pricing</a>
+                    <a href="portfolio.html"
+                        class="menu-item font-body font-semibold text-dark text-xl mobile-menu-link"
+                        active-class="menu-item-active">Portfolio</a>
+                    <a href="contact-us.html"
+                        class="menu-item font-body font-semibold text-dark text-xl mobile-menu-link"
+                        active-class="menu-item-active">Contact Us</a>
+                    <a href="services/blog.html"
+                        class="menu-item font-body font-semibold text-dark text-xl mobile-menu-link"
+                        active-class="menu-item-active">Blog</a>
+
+                    <!-- Mobile CTA Buttons -->
+                    <div class="flex flex-col space-y-4 mt-8 w-full max-w-xs">
+                        <a href="contact-us.html"
+                            class="bg-primary hover-primary text-white font-body font-semibold px-6 py-3 rounded-lg transition-all duration-300 w-full">
+                            Get Quote
+                        </a>
+                        <a href="free-audit.html"
+                            class="border-2 border-primary text-primary hover:bg-primary hover:text-white font-body font-semibold px-6 py-3 rounded-lg transition-all duration-300 w-full">
+                            Free Audit
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- =========================== Banner Section Here =========================== -->
+        <section class="relative min-h-screen bg-light bg-pattern overflow-hidden">
+            <!-- Decorative background elements -->
+            <div class="absolute top-20 left-10 w-32 h-32 bg-primary opacity-10 rounded-full blur-3xl"></div>
+            <div class="absolute bottom-20 right-10 w-40 h-40 bg-accent opacity-10 rounded-full blur-3xl"></div>
+            <div class="absolute top-1/2 left-1/4 w-2 h-2 bg-primary rounded-full opacity-30"></div>
+            <div class="absolute top-1/3 right-1/3 w-3 h-3 bg-accent rounded-full opacity-20"></div>
+
+            <div class="container mx-auto px-6 py-20">
+                <div class="grid lg:grid-cols-2 gap-16 items-center min-h-screen">
+
+                    <!-- Left Column - Content -->
+                    <div class="space-y-8 fade-in-up">
+                        <!-- Badge -->
+                        <div
+                            class="inline-flex items-center space-x-2 bg-white/80 backdrop-blur-sm border border-light rounded-full px-4 py-2 shadow-lg">
+                            <div class="w-2 h-2 bg-accent rounded-full animate-pulse"></div>
+                            <span class="text-sm font-medium text-body">Portfolio Showcase</span>
+                        </div>
+
+                        <!-- Main Heading -->
+                        <div class="space-y-4">
+                            <h1 class="font-heading text-5xl lg:text-6xl xl:text-7xl font-bold text-dark leading-tight">
+                                <span class="gradient-text">Proven Results</span><br>
+                                from <span class="gradient-text">Real Client</span><br>
+                                Projects
+                            </h1>
+
+                            <div class="w-20 h-1 bg-gradient-to-r from-primary to-accent rounded-full"></div>
+                        </div>
+
+                        <!-- Description -->
+                        <p class="text-xl text-body leading-relaxed max-w-lg">
+                            We don't just offer Virtual Assistant services — we deliver results. Here's a glimpse into
+                            the
+                            kind of impact we've had across various industries including ecommerce, web development,
+                            admin
+                            support, and beyond.
+                        </p>
+
+
+                        <!-- CTA Buttons -->
+                        <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                            <a href="#projects"
+                                class="glow-button bg-primary hover-primary text-white px-8 py-4 rounded-lg font-semibold font-heading text-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-105">
+                                View Our Work
+                            </a>
+                            <a href="/contact"
+                                class="border-2 border-primary text-primary hover-text-primary px-8 py-4 rounded-lg font-semibold font-heading text-lg transition-all duration-300 hover:bg-primary hover:text-white hover-white">
+                                Get Started Today
+                            </a>
+                        </div>
+
+                        <!-- Trust Indicators -->
+                        <div class="flex items-center space-x-6 pt-6">
+                            <div class="flex items-center space-x-2">
+                                <div class="flex -space-x-2">
+                                    <div
+                                        class="w-8 h-8 bg-gradient-to-br from-primary to-accent rounded-full border-2 border-white">
+                                    </div>
+                                    <div
+                                        class="w-8 h-8 bg-gradient-to-br from-accent to-primary rounded-full border-2 border-white">
+                                    </div>
+                                    <div
+                                        class="w-8 h-8 bg-gradient-to-br from-primary to-accent rounded-full border-2 border-white">
+                                    </div>
+                                </div>
+                                <span class="text-sm text-body">Trusted by 500+ businesses</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column - Project Case Study Image -->
+                    <div class="relative slide-in-right">
+                        <div class="project-showcase float-animation">
+                            <!-- Main Project Image -->
+                            <div class="relative h-96 lg:h-[500px] bg-white rounded-t-3xl overflow-hidden shadow-inner">
+                                <!-- Browser Chrome -->
+                                <div class="bg-white p-3 border-b border-gray-200 flex items-center space-x-3">
+                                    <div class="flex items-center space-x-2">
+                                        <div class="w-3 h-3 bg-red-400 rounded-full"></div>
+                                        <div class="w-3 h-3 bg-yellow-400 rounded-full"></div>
+                                        <div class="w-3 h-3 bg-green-400 rounded-full"></div>
+                                    </div>
+                                    <div
+                                        class="flex-1 bg-gray-100 rounded-lg px-3 py-1.5 text-xs text-gray-600 max-w-xs">
+                                        https://luxefashion-boutique.com
+                                    </div>
+                                </div>
+
+                                <!-- Real E-commerce Website Design -->
+                                <div class="bg-white h-full overflow-hidden">
+                                    <!-- Header Navigation -->
+                                    <div
+                                        class="bg-white px-6 py-4 border-b border-gray-100 flex items-center justify-between">
+                                        <div class="font-bold text-2xl gradient-text font-heading">LuxeFashion</div>
+                                        <div class="hidden md:flex items-center space-x-6 text-sm text-gray-700">
+                                            <span>Women</span>
+                                            <span>Men</span>
+                                            <span>Accessories</span>
+                                            <span>Sale</span>
+                                        </div>
+                                        <div class="flex items-center space-x-3">
+                                            <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor"
+                                                viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                                            </svg>
+                                            <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor"
+                                                viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z">
+                                                </path>
+                                            </svg>
+                                            <div class="relative">
+                                                <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor"
+                                                    viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2"
+                                                        d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-2.5 5M7 13v6a2 2 0 002 2h8.5M17 13v6a2 2 0 002 2H21">
+                                                    </path>
+                                                </svg>
+                                                <span
+                                                    class="absolute -top-2 -right-2 bg-accent text-white text-xs rounded-full w-4 h-4 flex items-center justify-center">3</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Hero Banner -->
+                                    <div
+                                        class="relative bg-gradient-to-r from-primary/5 via-accent/5 to-primary/5 px-6 py-12">
+                                        <div class="max-w-md">
+                                            <h1 class="text-3xl font-bold text-gray-900 mb-3 font-heading">Summer
+                                                Collection
+                                                2024</h1>
+                                            <p class="text-gray-600 mb-6 text-sm">Discover the latest trends in luxury
+                                                fashion</p>
+                                            <button
+                                                class="bg-primary text-white px-6 py-3 rounded-lg text-sm font-semibold hover:bg-primary/90 transition-colors">
+                                                Shop Now
+                                            </button>
+                                        </div>
+                                        <div
+                                            class="absolute right-6 top-6 w-32 h-32 bg-gradient-to-br from-primary/20 to-accent/20 rounded-full">
+                                        </div>
+                                    </div>
+
+                                    <!-- Featured Products -->
+                                    <div class="px-6 py-8">
+                                        <div class="flex items-center justify-between mb-6">
+                                            <h2 class="text-xl font-bold text-gray-900 font-heading">Featured Products
+                                            </h2>
+                                            <button class="text-primary text-sm font-medium">View All</button>
+                                        </div>
+
+                                        <div class="grid grid-cols-3 gap-4">
+                                            <!-- Product 1 -->
+                                            <div class="bg-gray-50 rounded-lg overflow-hidden group cursor-pointer">
+                                                <div class="h-24 bg-gradient-to-br from-pink-200 to-rose-300 relative">
+                                                    <div class="absolute inset-2 bg-white/20 rounded backdrop-blur-sm">
+                                                    </div>
+                                                    <div
+                                                        class="absolute top-2 right-2 bg-accent text-white text-xs px-2 py-1 rounded">
+                                                        New</div>
+                                                </div>
+                                                <div class="p-3">
+                                                    <div class="font-medium text-sm text-gray-900 truncate">Silk Dress
+                                                    </div>
+                                                    <div class="text-primary font-bold text-sm">$299</div>
+                                                    <div class="flex items-center mt-1">
+                                                        <div class="flex text-yellow-400 text-xs">★★★★★</div>
+                                                        <span class="text-xs text-gray-500 ml-1">(24)</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Product 2 -->
+                                            <div class="bg-gray-50 rounded-lg overflow-hidden group cursor-pointer">
+                                                <div
+                                                    class="h-24 bg-gradient-to-br from-blue-200 to-indigo-300 relative">
+                                                    <div class="absolute inset-2 bg-white/20 rounded backdrop-blur-sm">
+                                                    </div>
+                                                    <div
+                                                        class="absolute top-2 right-2 bg-red-500 text-white text-xs px-2 py-1 rounded">
+                                                        Sale</div>
+                                                </div>
+                                                <div class="p-3">
+                                                    <div class="font-medium text-sm text-gray-900 truncate">Designer
+                                                        Handbag
+                                                    </div>
+                                                    <div class="flex items-center space-x-2">
+                                                        <div class="text-primary font-bold text-sm">$199</div>
+                                                        <div class="text-xs text-gray-400 line-through">$299</div>
+                                                    </div>
+                                                    <div class="flex items-center mt-1">
+                                                        <div class="flex text-yellow-400 text-xs">★★★★★</div>
+                                                        <span class="text-xs text-gray-500 ml-1">(18)</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Product 3 -->
+                                            <div class="bg-gray-50 rounded-lg overflow-hidden group cursor-pointer">
+                                                <div
+                                                    class="h-24 bg-gradient-to-br from-emerald-200 to-teal-300 relative">
+                                                    <div class="absolute inset-2 bg-white/20 rounded backdrop-blur-sm">
+                                                    </div>
+                                                </div>
+                                                <div class="p-3">
+                                                    <div class="font-medium text-sm text-gray-900 truncate">Summer
+                                                        Jacket
+                                                    </div>
+                                                    <div class="text-primary font-bold text-sm">$159</div>
+                                                    <div class="flex items-center mt-1">
+                                                        <div class="flex text-yellow-400 text-xs">★★★★☆</div>
+                                                        <span class="text-xs text-gray-500 ml-1">(12)</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Bottom Stats Bar -->
+                                    <div
+                                        class="absolute bottom-0 left-0 right-0 bg-white/95 backdrop-blur-sm border-t border-gray-100 px-6 py-4">
+                                        <div class="grid grid-cols-3 gap-4 text-center">
+                                            <div>
+                                                <div class="text-lg font-bold gradient-text font-heading">2.4K+</div>
+                                                <div class="text-xs text-gray-600">Products</div>
+                                            </div>
+                                            <div>
+                                                <div class="text-lg font-bold gradient-text font-heading">98.5%</div>
+                                                <div class="text-xs text-gray-600">Satisfaction</div>
+                                            </div>
+                                            <div>
+                                                <div class="text-lg font-bold gradient-text font-heading">24h</div>
+                                                <div class="text-xs text-gray-600">Delivery</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Project Info Card -->
+                            <div class="bg-white p-6 rounded-b-3xl shadow-2xl">
+                                <div class="flex items-center justify-between mb-4">
+                                    <div>
+                                        <h3 class="font-heading font-bold text-xl text-dark">LuxeFashion E-commerce</h3>
+                                        <p class="text-body text-sm">Complete store redesign & optimization</p>
+                                    </div>
+                                    <div class="text-right">
+                                        <div class="text-2xl font-bold gradient-text font-heading">+520%</div>
+                                        <div class="text-xs text-body">Sales Growth</div>
+                                    </div>
+                                </div>
+
+                                <div class="grid grid-cols-3 gap-4 text-center py-3 border-t border-light">
+                                    <div>
+                                        <div class="text-sm font-semibold text-primary">4 Months</div>
+                                        <div class="text-xs text-body">Duration</div>
+                                    </div>
+                                    <div>
+                                        <div class="text-sm font-semibold text-accent">$125K+</div>
+                                        <div class="text-xs text-body">Revenue Added</div>
+                                    </div>
+                                    <div>
+                                        <div class="text-sm font-semibold text-dark">UI/UX + Dev</div>
+                                        <div class="text-xs text-body">Full Service</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Floating Elements -->
+                        <div class="absolute -top-6 -right-6 w-12 h-12 bg-accent/20 rounded-full blur-xl"></div>
+                        <div class="absolute -bottom-6 -left-6 w-16 h-16 bg-primary/20 rounded-full blur-xl"></div>
+
+                        <!-- Success Badge -->
+                        <div class="absolute -top-4 -left-4 bg-white rounded-full p-3 shadow-lg border border-light">
+                            <div
+                                class="w-6 h-6 bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center">
+                                <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Gradient Fade -->
+            <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent"></div>
+        </section>
+        <!-- =========================== Banner Section Here =========================== -->
+
+        <!-- =========================== Portfolio Section Here =========================== -->
+        <section id="projects" class="py-20 px-4 sm:px-6 lg:px-8 bg-light">
+            <div class="max-w-7xl mx-auto">
+                <!-- Section Header -->
+                <div class="text-center mb-16">
+                    <h2 class="section-header text-4xl sm:text-5xl lg:text-6xl font-heading font-bold text-dark mb-6">
+                        Success Stories
+                    </h2>
+
+                    <p class="font-body text-xl text-body max-w-3xl mx-auto">
+                        Transforming businesses through strategic data management and automation solutions
+                    </p>
+                </div>
+
+                <!-- Gallery Grid - 2x2 Layout -->
+                <div class="gallery-grid grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+                    <!-- Case Study 1 - Large Featured Card -->
+                    <div class="gallery-card bg-white rounded-2xl overflow-hidden border border-light shadow-lg cursor-pointer h-full"
+                        onclick="openModal('case1')">
+                        <div class="relative h-80 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80"
+                                alt="E-commerce Dashboard"
+                                class="w-full h-full object-cover transition-transform duration-300 hover:scale-110">
+                            <div class="image-overlay absolute inset-0 flex items-center justify-center">
+                                <div class="text-center text-white content-slide">
+                                    <div
+                                        class="bg-white bg-opacity-20 backdrop-blur-sm rounded-full p-4 mb-4 mx-auto w-16 h-16 flex items-center justify-center">
+                                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                                            <path d="M10 12l-6-6 1.41-1.41L10 9.17l4.59-4.58L16 6z" />
+                                        </svg>
+                                    </div>
+                                    <p class="text-lg font-semibold">View Full Case Study</p>
+                                </div>
+                            </div>
+
+                            <!-- Stats Badge -->
+                            <div class="absolute top-6 right-6 stats-badge rounded-full px-4 py-2">
+                                <span class="font-heading font-semibold text-primary">5,000+ Products</span>
+                            </div>
+                        </div>
+
+                        <div class="p-8">
+                            <div class="flex items-center gap-2 mb-4">
+                                <span
+                                    class="bg-accent text-white px-3 py-1 rounded-full text-sm font-medium">E-commerce</span>
+                                <span class="bg-primary text-white px-3 py-1 rounded-full text-sm font-medium">Data
+                                    Migration</span>
+                            </div>
+                            <h3 class="font-heading text-2xl font-bold text-dark mb-4">
+                                Shopify Store Mass Product Upload
+                            </h3>
+                            <p class="font-body text-body mb-6 line-clamp-3">
+                                Automated the complete product catalog migration for a growing e-commerce business,
+                                implementing custom data validation and SEO optimization for 5,000+ products in just 3
+                                weeks.
+                            </p>
+
+                            <!-- Key Metrics -->
+                            <div class="grid grid-cols-3 gap-4 pt-6 border-t border-light">
+                                <div class="text-center">
+                                    <div class="font-heading text-xl font-bold text-primary">3 Weeks</div>
+                                    <div class="font-body text-sm text-body">Timeline</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="font-heading text-xl font-bold text-accent">5,000+</div>
+                                    <div class="font-body text-sm text-body">Products</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="font-heading text-xl font-bold text-primary">99.9%</div>
+                                    <div class="font-body text-sm text-body">Accuracy</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Case Study 2 - Large Card -->
+                    <div class="gallery-card bg-white rounded-2xl overflow-hidden border border-light shadow-lg cursor-pointer h-full"
+                        onclick="openModal('case2')">
+                        <div class="relative h-80 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80"
+                                alt="CRM Dashboard"
+                                class="w-full h-full object-cover transition-transform duration-300 hover:scale-110">
+                            <div class="image-overlay absolute inset-0 flex items-center justify-center">
+                                <div class="text-center text-white content-slide">
+                                    <div
+                                        class="bg-white bg-opacity-20 backdrop-blur-sm rounded-full p-4 mb-4 mx-auto w-16 h-16 flex items-center justify-center">
+                                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                                            <path d="M10 12l-6-6 1.41-1.41L10 9.17l4.59-4.58L16 6z" />
+                                        </svg>
+                                    </div>
+                                    <p class="text-lg font-semibold">View Full Case Study</p>
+                                </div>
+                            </div>
+
+                            <div class="absolute top-6 right-6 stats-badge rounded-full px-4 py-2">
+                                <span class="font-heading font-semibold text-accent">10,000+ Leads</span>
+                            </div>
+                        </div>
+
+                        <div class="p-8">
+                            <div class="flex items-center gap-2 mb-4">
+                                <span
+                                    class="bg-primary text-white px-3 py-1 rounded-full text-sm font-medium">CRM</span>
+                                <span
+                                    class="bg-accent text-white px-3 py-1 rounded-full text-sm font-medium">Automation</span>
+                            </div>
+                            <h3 class="font-heading text-2xl font-bold text-dark mb-4">
+                                CRM Lead Management System
+                            </h3>
+                            <p class="font-body text-body mb-6 line-clamp-3">
+                                Streamlined lead processing workflow, reducing manual data entry by 80% and improving
+                                conversion rates through intelligent automation and real-time analytics.
+                            </p>
+
+                            <div class="grid grid-cols-3 gap-4 pt-6 border-t border-light">
+                                <div class="text-center">
+                                    <div class="font-heading text-xl font-bold text-primary">2 Months</div>
+                                    <div class="font-body text-sm text-body">Duration</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="font-heading text-xl font-bold text-accent">80%</div>
+                                    <div class="font-body text-sm text-body">Time Saved</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="font-heading text-xl font-bold text-primary">25%</div>
+                                    <div class="font-body text-sm text-body">Conv. Rate</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Case Study 3 - Large Card -->
+                    <div class="gallery-card bg-white rounded-2xl overflow-hidden border border-light shadow-lg cursor-pointer h-full"
+                        onclick="openModal('case3')">
+                        <div class="relative h-80 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2426&q=80"
+                                alt="Analytics Dashboard"
+                                class="w-full h-full object-cover transition-transform duration-300 hover:scale-110">
+                            <div class="image-overlay absolute inset-0 flex items-center justify-center">
+                                <div class="text-center text-white content-slide">
+                                    <div
+                                        class="bg-white bg-opacity-20 backdrop-blur-sm rounded-full p-4 mb-4 mx-auto w-16 h-16 flex items-center justify-center">
+                                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                                            <path d="M10 12l-6-6 1.41-1.41L10 9.17l4.59-4.58L16 6z" />
+                                        </svg>
+                                    </div>
+                                    <p class="text-lg font-semibold">View Full Case Study</p>
+                                </div>
+                            </div>
+
+                            <div class="absolute top-6 right-6 stats-badge rounded-full px-4 py-2">
+                                <span class="font-heading font-semibold text-primary">50+ Reports</span>
+                            </div>
+                        </div>
+
+                        <div class="p-8">
+                            <div class="flex items-center gap-2 mb-4">
+                                <span
+                                    class="bg-accent text-white px-3 py-1 rounded-full text-sm font-medium">Analytics</span>
+                                <span
+                                    class="bg-primary text-white px-3 py-1 rounded-full text-sm font-medium">Reporting</span>
+                            </div>
+                            <h3 class="font-heading text-2xl font-bold text-dark mb-4">
+                                Automated Reporting Dashboard
+                            </h3>
+                            <p class="font-body text-body mb-6 line-clamp-3">
+                                Custom analytics platform generating real-time business insights and automated monthly
+                                reports, eliminating manual data compilation and improving decision-making speed.
+                            </p>
+
+                            <div class="grid grid-cols-3 gap-4 pt-6 border-t border-light">
+                                <div class="text-center">
+                                    <div class="font-heading text-xl font-bold text-accent">6 Weeks</div>
+                                    <div class="font-body text-sm text-body">Build Time</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="font-heading text-xl font-bold text-primary">Real-time</div>
+                                    <div class="font-body text-sm text-body">Updates</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="font-heading text-xl font-bold text-accent">90%</div>
+                                    <div class="font-body text-sm text-body">Time Saved</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Case Study 4 - New Inventory Management System -->
+                    <div class="gallery-card bg-white rounded-2xl overflow-hidden border border-light shadow-lg cursor-pointer h-full"
+                        onclick="openModal('case4')">
+                        <div class="relative h-80 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80"
+                                alt="Inventory Management"
+                                class="w-full h-full object-cover transition-transform duration-300 hover:scale-110">
+                            <div class="image-overlay absolute inset-0 flex items-center justify-center">
+                                <div class="text-center text-white content-slide">
+                                    <div
+                                        class="bg-white bg-opacity-20 backdrop-blur-sm rounded-full p-4 mb-4 mx-auto w-16 h-16 flex items-center justify-center">
+                                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                                            <path d="M10 12l-6-6 1.41-1.41L10 9.17l4.59-4.58L16 6z" />
+                                        </svg>
+                                    </div>
+                                    <p class="text-lg font-semibold">View Full Case Study</p>
+                                </div>
+                            </div>
+
+                            <div class="absolute top-6 right-6 stats-badge rounded-full px-4 py-2">
+                                <span class="font-heading font-semibold text-accent">15 Warehouses</span>
+                            </div>
+                        </div>
+
+                        <div class="p-8">
+                            <div class="flex items-center gap-2 mb-4">
+                                <span
+                                    class="bg-primary text-white px-3 py-1 rounded-full text-sm font-medium">Inventory</span>
+                                <span
+                                    class="bg-accent text-white px-3 py-1 rounded-full text-sm font-medium">Integration</span>
+                            </div>
+                            <h3 class="font-heading text-2xl font-bold text-dark mb-4">
+                                Multi-Warehouse Inventory Sync
+                            </h3>
+                            <p class="font-body text-body mb-6 line-clamp-3">
+                                Unified inventory management across multiple warehouses with real-time stock tracking,
+                                automated reordering, and seamless integration with existing ERP systems.
+                            </p>
+
+                            <div class="grid grid-cols-3 gap-4 pt-6 border-t border-light">
+                                <div class="text-center">
+                                    <div class="font-heading text-xl font-bold text-primary">4 Months</div>
+                                    <div class="font-body text-sm text-body">Timeline</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="font-heading text-xl font-bold text-accent">15</div>
+                                    <div class="font-body text-sm text-body">Locations</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="font-heading text-xl font-bold text-primary">99%</div>
+                                    <div class="font-body text-sm text-body">Accuracy</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Case Studies Modals -->
+        <!-- DaisyUI Modal for Case Study 1 -->
+        <dialog id="modal_case1" class="modal">
+            <div class="modal-box">
+                <div class="flex justify-between items-center mb-6">
+                    <h3 class="font-heading text-2xl font-bold text-dark">Shopify Store Mass Product Upload</h3>
+                    <form method="dialog">
+                        <button class="btn btn-sm btn-circle btn-ghost">✕</button>
+                    </form>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8 mb-8">
+                    <div>
+                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80"
+                            alt="E-commerce Dashboard" class="w-full h-64 object-cover rounded-xl">
+                    </div>
+                    <div>
+                        <h4 class="font-heading text-xl font-bold text-dark mb-4">Project Overview</h4>
+                        <p class="font-body text-body mb-4">
+                            A growing e-commerce business needed to migrate their entire product catalog from multiple
+                            spreadsheets and legacy systems to their new Shopify store. The challenge was maintaining
+                            data accuracy while optimizing for SEO and user experience.
+                        </p>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-light p-4 rounded-lg">
+                                <div class="font-heading text-2xl font-bold text-primary">5,000+</div>
+                                <div class="font-body text-sm text-body">Products Uploaded</div>
+                            </div>
+                            <div class="bg-light p-4 rounded-lg">
+                                <div class="font-heading text-2xl font-bold text-accent">99.9%</div>
+                                <div class="font-body text-sm text-body">Data Accuracy</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h4 class="font-heading text-xl font-bold text-dark mb-4">Solutions Implemented</h4>
+                <div class="grid md:grid-cols-3 gap-6 mb-8">
+                    <div class="bg-light p-6 rounded-xl">
+                        <h5 class="font-heading font-semibold text-dark mb-2">Data Validation</h5>
+                        <p class="font-body text-body text-sm">Automated quality checks and error detection</p>
+                    </div>
+                    <div class="bg-light p-6 rounded-xl">
+                        <h5 class="font-heading font-semibold text-dark mb-2">SEO Optimization</h5>
+                        <p class="font-body text-body text-sm">Meta descriptions and keyword optimization</p>
+                    </div>
+                    <div class="bg-light p-6 rounded-xl">
+                        <h5 class="font-heading font-semibold text-dark mb-2">Bulk Processing</h5>
+                        <p class="font-body text-body text-sm">Efficient batch upload and processing system</p>
+                    </div>
+                </div>
+
+                <h4 class="font-heading text-xl font-bold text-dark mb-4">Results Achieved</h4>
+                <div class="bg-gradient-to-r from-blue-50 to-green-50 p-6 rounded-xl">
+                    <ul class="font-body text-body space-y-2">
+                        <li class="flex items-center gap-2">
+                            <div class="w-2 h-2 bg-primary rounded-full"></div>
+                            Reduced manual work by 95% through automation
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <div class="w-2 h-2 bg-accent rounded-full"></div>
+                            Improved SEO rankings for 80% of product pages
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <div class="w-2 h-2 bg-primary rounded-full"></div>
+                            Completed 3 months of work in just 3 weeks
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </dialog>
+
+        <!-- DaisyUI Modal for Case Study 2 -->
+        <dialog id="modal_case2" class="modal">
+            <div class="modal-box">
+                <div class="flex justify-between items-center mb-6">
+                    <h3 class="font-heading text-2xl font-bold text-dark">CRM Lead Management System</h3>
+                    <form method="dialog">
+                        <button class="btn btn-sm btn-circle btn-ghost">✕</button>
+                    </form>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8 mb-8">
+                    <div>
+                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80"
+                            alt="CRM Dashboard" class="w-full h-64 object-cover rounded-xl">
+                    </div>
+                    <div>
+                        <h4 class="font-heading text-xl font-bold text-dark mb-4">Project Challenge</h4>
+                        <p class="font-body text-body mb-4">
+                            Sales team was spending 60% of their time on manual data entry instead of selling.
+                            Lead quality was inconsistent and follow-up processes were delayed.
+                        </p>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-light p-4 rounded-lg">
+                                <div class="font-heading text-2xl font-bold text-primary">10,000+</div>
+                                <div class="font-body text-sm text-body">Leads Processed</div>
+                            </div>
+                            <div class="bg-light p-4 rounded-lg">
+                                <div class="font-heading text-2xl font-bold text-accent">80%</div>
+                                <div class="font-body text-sm text-body">Time Reduction</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h4 class="font-heading text-xl font-bold text-dark mb-4">Automation Features</h4>
+                <div class="grid md:grid-cols-2 gap-6 mb-8">
+                    <div class="bg-light p-6 rounded-xl">
+                        <h5 class="font-heading font-semibold text-dark mb-2">Lead Scoring</h5>
+                        <p class="font-body text-body text-sm">Automatic qualification and prioritization</p>
+                    </div>
+                    <div class="bg-light p-6 rounded-xl">
+                        <h5 class="font-heading font-semibold text-dark mb-2">Email Sequences</h5>
+                        <p class="font-body text-body text-sm">Personalized follow-up campaigns</p>
+                    </div>
+                    <div class="bg-light p-6 rounded-xl">
+                        <h5 class="font-heading font-semibold text-dark mb-2">Task Assignment</h5>
+                        <p class="font-body text-body text-sm">Smart distribution to sales reps</p>
+                    </div>
+                    <div class="bg-light p-6 rounded-xl">
+                        <h5 class="font-heading font-semibold text-dark mb-2">Reporting</h5>
+                        <p class="font-body text-body text-sm">Real-time performance analytics</p>
+                    </div>
+                </div>
+
+                <h4 class="font-heading text-xl font-bold text-dark mb-4">Business Impact</h4>
+                <div class="bg-gradient-to-r from-blue-50 to-green-50 p-6 rounded-xl">
+                    <ul class="font-body text-body space-y-2">
+                        <li class="flex items-center gap-2">
+                            <div class="w-2 h-2 bg-primary rounded-full"></div>
+                            25% increase in conversion rates
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <div class="w-2 h-2 bg-accent rounded-full"></div>
+                            40% faster response times to leads
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <div class="w-2 h-2 bg-primary rounded-full"></div>
+                            Sales team productivity increased by 60%
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </dialog>
+
+        <!-- DaisyUI Modal for Case Study 3 -->
+        <dialog id="modal_case3" class="modal">
+            <div class="modal-box">
+                <div class="flex justify-between items-center mb-6">
+                    <h3 class="font-heading text-2xl font-bold text-dark">Automated Reporting Dashboard</h3>
+                    <form method="dialog">
+                        <button class="btn btn-sm btn-circle btn-ghost">✕</button>
+                    </form>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8 mb-8">
+                    <div>
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2426&q=80"
+                            alt="Analytics Dashboard" class="w-full h-64 object-cover rounded-xl">
+                    </div>
+                    <div>
+                        <h4 class="font-heading text-xl font-bold text-dark mb-4">The Problem</h4>
+                        <p class="font-body text-body mb-4">
+                            Management was spending days each month compiling reports from multiple systems.
+                            Data was often outdated by the time reports were completed.
+                        </p>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-light p-4 rounded-lg">
+                                <div class="font-heading text-2xl font-bold text-primary">50+</div>
+                                <div class="font-body text-sm text-body">Reports Generated</div>
+                            </div>
+                            <div class="bg-light p-4 rounded-lg">
+                                <div class="font-heading text-2xl font-bold text-accent">90%</div>
+                                <div class="font-body text-sm text-body">Time Saved</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h4 class="font-heading text-xl font-bold text-dark mb-4">Solution Overview</h4>
+                <p class="font-body text-body mb-4">
+                    Developed a custom reporting dashboard that integrates with existing data sources to provide
+                    real-time
+                    analytics and automated report generation.
+                </p>
+
+                <h4 class="font-heading text-xl font-bold text-dark mb-4">Key Features</h4>
+                <div class="grid md:grid-cols-2 gap-6 mb-8">
+                    <div class="bg-light p-6 rounded-xl">
+                        <h5 class="font-heading font-semibold text-dark mb-2">Real-time Data Sync</h5>
+                        <p class="font-body text-body text-sm">Instant updates from connected data sources</p>
+                    </div>
+                    <div class="bg-light p-6 rounded-xl">
+                        <h5 class="font-heading font-semibold text-dark mb-2">Customizable Dashboards</h5>
+                        <p class="font-body text-body text-sm">Tailored views for different management levels</p>
+                    </div>
+                    <div class="bg-light p-6 rounded-xl">
+                        <h5 class="font-heading font-semibold text-dark mb-2">Automated Alerts</h5>
+                        <p class="font-body text-body text-sm">Notifications for key metrics and anomalies</p>
+                    </div>
+                    <div class="bg-light p-6 rounded-xl">
+                        <h5 class="font-heading font-semibold text-dark mb-2">Secure Access</h5>
+                        <p class="font-body text-body text-sm">Role-based access control and data security</p>
+                    </div>
+                </div>
+
+                <h4 class="font-heading text-xl font-bold text-dark mb-4">Results Delivered</h4>
+                <div class="bg-gradient-to-r from-blue-50 to-green-50 p-6 rounded-xl">
+                    <ul class="font-body text-body space-y-2">
+                        <li class="flex items-center gap-2">
+                            <div class="w-2 h-2 bg-primary rounded-full"></div>
+                            Reports that used to take days now ready in minutes
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <div class="w-2 h-2 bg-accent rounded-full"></div>
+                            Management can now focus on analysis, not data gathering
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <div class="w-2 h-2 bg-primary rounded-full"></div>
+                            Enhanced decision-making with up-to-date information
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </dialog>
+
+        <!-- DaisyUI Modal for Case Study 4 -->
+        <dialog id="modal_case4" class="modal">
+            <div class="modal-box">
+                <div class="flex justify-between items-center mb-6">
+                    <h3 class="font-heading text-2xl font-bold text-dark">Multi-Warehouse Inventory Sync</h3>
+                    <form method="dialog">
+                        <button class="btn btn-sm btn-circle btn-ghost">✕</button>
+                    </form>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8 mb-8">
+                    <div>
+                        <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80"
+                            alt="Inventory Management" class="w-full h-64 object-cover rounded-xl">
+                    </div>
+                    <div>
+                        <h4 class="font-heading text-xl font-bold text-dark mb-4">Business Challenge</h4>
+                        <p class="font-body text-body mb-4">
+                            The client operated multiple warehouses with separate inventory systems, leading to
+                            inconsistencies and stockouts.
+                        </p>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-light p-4 rounded-lg">
+                                <div class="font-heading text-2xl font-bold text-primary">15</div>
+                                <div class="font-body text-sm text-body">Warehouses Integrated</div>
+                            </div>
+                            <div class="bg-light p-4 rounded-lg">
+                                <div class="font-heading text-2xl font-bold text-accent">99%</div>
+                                <div class="font-body text-sm text-body">Data Accuracy</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h4 class="font-heading text-xl font-bold text-dark mb-4">Integration Solution</h4>
+                <p class="font-body text-body mb-4">
+                    Implemented a centralized inventory management system that synchronizes data across all warehouses
+                    in
+                    real-time.
+                </p>
+
+                <h4 class="font-heading text-xl font-bold text-dark mb-4">Key Benefits</h4>
+                <div class="grid md:grid-cols-2 gap-6 mb-8">
+                    <div class="bg-light p-6 rounded-xl">
+                        <h5 class="font-heading font-semibold text-dark mb-2">Real-time Inventory Tracking</h5>
+                        <p class="font-body text-body text-sm">Always know stock levels across all locations</p>
+                    </div>
+                    <div class="bg-light p-6 rounded-xl">
+                        <h5 class="font-heading font-semibold text-dark mb-2">Automated Reordering</h5>
+                        <p class="font-body text-body text-sm">Never run out of stock with automated purchase orders</p>
+                    </div>
+                    <div class="bg-light p-6 rounded-xl">
+                        <h5 class="font-heading font-semibold text-dark mb-2">ERP Integration</h5>
+                        <p class="font-body text-body text-sm">Seamless data flow between inventory and ERP systems</p>
+                    </div>
+                    <div class="bg-light p-6 rounded-xl">
+                        <h5 class="font-heading font-semibold text-dark mb-2">Scalability</h5>
+                        <p class="font-body text-body text-sm">Easily add new warehouses and locations</p>
+                    </div>
+                </div>
+
+                <h4 class="font-heading text-xl font-bold text-dark mb-4">Results Achieved</h4>
+                <div class="bg-gradient-to-r from-blue-50 to-green-50 p-6 rounded-xl">
+                    <ul class="font-body text-body space-y-2">
+                        <li class="flex items-center gap-2">
+                            <div class="w-2 h-2 bg-primary rounded-full"></div>
+                            Unified inventory view across all warehouses
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <div class="w-2 h-2 bg-accent rounded-full"></div>
+                            Reduced stockouts by 90%
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <div class="w-2 h-2 bg-primary rounded-full"></div>
+                            Improved order fulfillment speed and accuracy
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </dialog>
+        <!-- =========================== Portfolio Section Here =========================== -->
+
+        <!-- =========================== Partners Section Here =========================== -->
+        <section class="partners-trust-section">
+            <div class="container">
+                <!-- Heading -->
+                <div class="partners-trust-heading">
+                    <h2 class="partners-heading">
+                        Trusted by 30,000+ Companies
+                    </h2>
+                    <p class="partners-description">
+                        Join thousands of businesses worldwide who trust our virtual assistant services to streamline
+                        their operations and boost productivity.
+                    </p>
+                </div>
+
+                <!-- Slider -->
+                <div class="partners-slider-container">
+                    <div class="swiper partners-swiper">
+                        <div class="swiper-wrapper" id="partnersWrapper">
+                            <!-- Slides will be inserted by JS -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- =========================== Partners Section Here =========================== -->
+
+        <!-- =========================== Testimonials Section Here =========================== -->
+        <section class="testimonials-section py-16 md:py-24 lg:py-32 relative overflow-hidden">
+            <!-- Background Elements -->
+            <div class="absolute inset-0 bg-gradient-to-br from-slate-50 via-blue-50/30 to-indigo-50/50"></div>
+            <div
+                class="absolute top-0 right-0 w-96 h-96 bg-gradient-to-bl from-blue-100/40 to-transparent rounded-full blur-3xl">
+            </div>
+            <div
+                class="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-tr from-indigo-100/40 to-transparent rounded-full blur-3xl">
+            </div>
+
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <!-- Section Header -->
+                <div class="text-center mb-12 md:mb-16 lg:mb-20">
+                    <div
+                        class="trust-badge inline-flex items-center gap-3 bg-white/90 backdrop-blur-sm rounded-full px-6 py-3 mb-6 border border-slate-200/60 shadow-sm">
+                        <div class="w-2 h-2 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full animate-pulse">
+                        </div>
+                        <span class="font-semibold md:text-sm text-slate-700 text-nowrap text-[12px]">Trusted by 500+
+                            Businesses
+                            Worldwide</span>
+                    </div>
+
+                    <h2 class="section-header text-4xl sm:text-5xl lg:text-6xl font-heading font-bold text-dark mb-6">
+                        What Our <span class="gradient-text">Clients</span> Say
+                    </h2>
+
+                    <p class="text-lg md:text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
+                        Discover how businesses worldwide have transformed their operations and achieved remarkable
+                        growth with
+                        TrustfulVA's virtual assistance solutions.
+                    </p>
+                </div>
+
+                <!-- Slider Section -->
+                <div class="relative">
+                    <!-- Navigation Buttons -->
+                    <div class="hidden md:block">
+                        <button
+                            class="testimonial-button-prev absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-20 w-12 h-12 bg-white hover:bg-blue-50 rounded-full shadow-lg border border-slate-200/60 flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-xl group">
+                            <svg class="w-5 h-5 text-slate-600 group-hover:text-blue-600 transition-colors" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 19l-7-7 7-7" />
+                            </svg>
+                        </button>
+                        <button
+                            class="testimonial-button-next absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 z-20 w-12 h-12 bg-white hover:bg-blue-50 rounded-full shadow-lg border border-slate-200/60 flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-xl group">
+                            <svg class="w-5 h-5 text-slate-600 group-hover:text-blue-600 transition-colors" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5l7 7-7 7" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!-- Swiper Wrapper -->
+                    <div class="swiper testimonials-swiper pb-16">
+                        <div class="swiper-wrapper" id="testimonial-wrapper">
+                            <!-- Slides injected by JS -->
+                        </div>
+                        <div class="testimonial-pagination flex justify-center mt-8"></div>
+                    </div>
+                </div>
+
+                <!-- Call to Action -->
+                <div class="text-center mt-0 md:mt-10">
+                    <a href="/contact-us.html" style="display: block !important;"
+                        class="group bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-semibold px-8 py-4 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl block w-fit mx-auto">
+                        <span class="flex items-center gap-3">
+                            <svg class="w-5 h-5 group-hover:rotate-12 transition-transform duration-300" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                            </svg>
+                            Get Your Free Consultation
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================== Testimonials Section Here =========================== -->
+
+
+        <!-- =========================== CTA Section Here =========================== -->
+        <section class="cta-hero-section py-20 lg:py-32 relative min-h-screen flex items-center">
+            <!-- Floating Background Elements -->
+            <div class="cta-floating-elements">
+                <div class="cta-float-circle-1"></div>
+                <div class="cta-float-circle-2"></div>
+                <div class="cta-float-square"></div>
+            </div>
+
+            <div class="container mx-auto px-6 lg:px-8">
+                <div class="cta-content-wrapper text-center">
+                    <!-- Main Heading -->
+                    <h1 class="cta-main-heading font-heading text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+                        Let's Take Your Workload<br>
+                        <span class="block">Off Your Plate Today!</span>
+                    </h1>
+
+                    <!-- Subtitle -->
+                    <p class="cta-subtitle-text font-body text-lg md:text-xl lg:text-2xl mb-12 leading-relaxed">
+                        Free up your time to focus on what matters most. Our expert virtual assistants handle your tasks
+                        so you
+                        can scale your business and reclaim your life.
+                    </p>
+
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-col sm:flex-row gap-6 justify-center items-center mt-16">
+                        <a href="/contact-us"
+                            class="cta-button-primary font-heading relative z-10 inline-flex items-center">
+                            <span>Book a Free Call</span>
+                            <svg class="ml-3 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                            </svg>
+                        </a>
+
+                        <a href="/free-audit"
+                            class="cta-button-secondary font-heading relative z-10 inline-flex items-center">
+                            <span>Request a VA Now</span>
+                            <svg class="ml-3 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- Trust Indicators -->
+                    <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                        <div class="flex flex-col items-center">
+                            <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-4">
+                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                </svg>
+                            </div>
+                            <h3 class="font-heading text-dark font-semibold text-lg mb-2">Quick Setup</h3>
+                            <p class="font-body text-body text-center">Get matched with your ideal VA in 24 hours</p>
+                        </div>
+
+                        <div class="flex flex-col items-center">
+                            <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center mb-4">
+                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </div>
+                            <h3 class="font-heading text-dark font-semibold text-lg mb-2">Proven Results</h3>
+                            <p class="font-body text-body text-center">Save 20+ hours per week on average</p>
+                        </div>
+
+                        <div class="flex flex-col items-center">
+                            <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-4">
+                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
+                                </svg>
+                            </div>
+                            <h3 class="font-heading text-dark font-semibold text-lg mb-2">Cost Effective</h3>
+                            <p class="font-body text-body text-center">Up to 70% savings vs full-time employees</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- =========================== CTA Section Here =========================== -->
+    </main>
+
+    <footer class="footer-container">
+        <!-- Tech Background Pattern -->
+        <div class="tech-background">
+            <div class="circuit-pattern"></div>
+        </div>
+
+        <!-- Main Footer Content -->
+        <div class="footer-content">
+            <!-- Top Section with Brand and CTA -->
+            <div class="footer-top">
+                <div class="brand-section">
+                    <!-- Tech Logo Icon -->
+                    <div class="brand-wrapper">
+                        <div class="brand-icon">
+                            <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <h2 class="brand-title font-heading">
+                            Trustful <span class="brand-accent">VA</span>
+                        </h2>
+                    </div>
+                    <p class="brand-description font-body">
+                        Empowering businesses with reliable virtual assistance solutions.
+                        From web development to administrative tasks, we deliver excellence with trust.
+                    </p>
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="cta-buttons">
+                    <button class="btn-primary font-body">
+                        <svg class="btn-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                        Get Quote
+                    </button>
+                    <button class="btn-secondary font-body">
+                        <svg class="btn-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        Free Audit
+                    </button>
+                </div>
+            </div>
+
+            <!-- Links Grid -->
+            <div class="footer-links">
+                <div class="links-grid">
+                    <!-- About -->
+                    <div class="link-column">
+                        <h3 class="column-title font-heading">
+                            About Us
+                            <div class="title-underline primary-accent"></div>
+                        </h3>
+                        <ul class="link-list">
+                            <li><a href="#" class="link-item font-body">About Us</a></li>
+                            <li><a href="#" class="link-item font-body">Account Tiers</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Services -->
+                    <div class="link-column">
+                        <h3 class="column-title font-heading">
+                            Services
+                            <div class="title-underline accent-accent"></div>
+                        </h3>
+                        <ul class="link-list">
+                            <li><a href="/web-development" class="link-item font-body">Web Development Support</a></li>
+                            <li><a href="/data-entry" class="link-item font-body">Data Entry & Admin Tasks</a></li>
+                            <li><a href="/ecommerce-support" class="link-item font-body">Ecommerce Support</a></li>
+                            <li><a href="/social-media-assistant" class="link-item font-body">Social Media
+                                    Assistance</a></li>
+                            <li><a href="/personal-va" class="link-item font-body">Personal Virtual Assistant</a></li>
+                            <li><a href="/wordpress-maintenance" class="link-item font-body">WordPress Maintenance</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Partners -->
+                    <div class="link-column">
+                        <h3 class="column-title font-heading">
+                            Partners
+                            <div class="title-underline primary-accent"></div>
+                        </h3>
+                        <ul class="link-list">
+                            <li><a href="#" class="link-item font-body">AI Website Monitor</a></li>
+                            <li><a href="#" class="link-item font-body">Mydynamic VA</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="link-column">
+                        <h3 class="column-title font-heading">
+                            Quick Links
+                            <div class="title-underline accent-accent"></div>
+                        </h3>
+                        <ul class="link-list">
+                            <li><a href="#" class="link-item font-body">Pricing</a></li>
+                            <li><a href="#" class="link-item font-body">Portfolio / Case Studies</a></li>
+                            <li><a href="#" class="link-item font-body">Contact Us</a></li>
+                            <li><a href="#" class="link-item font-body">Blog</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Legal -->
+                    <div class="link-column">
+                        <h3 class="column-title font-heading">
+                            Legal
+                            <div class="title-underline primary-accent"></div>
+                        </h3>
+                        <ul class="link-list">
+                            <li><a href="#" class="link-item font-body">Privacy Policy</a></li>
+                            <li><a href="#" class="link-item font-body">Terms and Conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="footer-bottom">
+                <div class="bottom-content">
+                    <!-- Copyright -->
+                    <div class="copyright">
+                        <p class="copyright-text font-body">
+                            © 2025 <span class="brand-highlight">Trustful VA</span>. All rights reserved.
+                        </p>
+                        <p class="tagline font-body">
+                            Crafted with ❤️ for modern businesses
+                        </p>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="social-section">
+                        <span class="social-label font-body">Follow us:</span>
+                        <div class="social-links">
+                            <a href="#" class="social-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tech Decoration -->
+        <div class="tech-decoration">
+            <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="100" cy="100" r="80" fill="none" stroke="currentColor" stroke-width="1" />
+                <circle cx="100" cy="100" r="60" fill="none" stroke="currentColor" stroke-width="1" />
+                <circle cx="100" cy="100" r="40" fill="none" stroke="currentColor" stroke-width="1" />
+                <line x1="100" y1="20" x2="100" y2="40" stroke="currentColor" stroke-width="2" />
+                <line x1="100" y1="160" x2="100" y2="180" stroke="currentColor" stroke-width="2" />
+                <line x1="20" y1="100" x2="40" y2="100" stroke="currentColor" stroke-width="2" />
+                <line x1="160" y1="100" x2="180" y2="100" stroke="currentColor" stroke-width="2" />
+            </svg>
+        </div>
+    </footer>
+
+    <script src="/assets/js/script.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+
+</html>
